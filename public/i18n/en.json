@@ -1,1 +1,7 @@
-{}
+{
+    "header": {
+        "aboutMe": "About me",
+        "skillSet": "Skill set",
+        "myWork": "My work"
+    }
+}

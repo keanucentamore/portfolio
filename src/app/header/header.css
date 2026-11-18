@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 78px 0 77px;
+}
+
+header img {
+    display: block;
+    width: 64px;
+    height: 69px;
+}
+
+nav {
+    display: flex;
+}
+
+/* Jeder Link bekommt eine feste Breite – so liegen die Anfänge wie im Design im 157px-Raster */
+nav a {
+    width: 157px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--primary);
+    text-decoration: none;
+}
