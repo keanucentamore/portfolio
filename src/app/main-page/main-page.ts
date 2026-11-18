@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Header } from '../header/header';
+import { Hero } from './hero/hero';
 
 @Component({
     selector: 'app-main-page',
-    imports: [Header],
+    imports: [Hero],
     templateUrl: './main-page.html',
     styleUrl: './main-page.css',
 })

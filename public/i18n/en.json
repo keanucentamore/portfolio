@@ -4,5 +4,9 @@
         "skillSet": "Skill set",
         "myWork": "My work",
         "contact": "Contact"
+    },
+    "hero": {
+        "hello": "Hello! I am Sofia",
+        "title": "FRONTEND DEVELOPER"
     }
 }
