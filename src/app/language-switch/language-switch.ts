@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageSwitch {
     translate = inject(TranslateService);
+    inMenu = input(false);
 
     /**
      * Switches all texts of the page to the given language.

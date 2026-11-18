@@ -27,3 +27,13 @@ button.active {
     color: var(--dark-blue);
     border-bottom-color: var(--dark-blue);
 }
+
+/* Im Mobilmenü: enger, aktive Sprache nur fett, ohne dunkles Blau und Unterlinie */
+.in-menu span {
+    margin: 0 9px 0 6px;
+}
+
+.in-menu button.active {
+    color: var(--primary);
+    border-bottom-color: transparent;
+}

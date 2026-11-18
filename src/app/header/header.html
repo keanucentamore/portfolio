@@ -28,7 +28,7 @@
             <a href="#skill-set" (click)="closeMenu()">{{ 'header.skillSet' | translate }}</a>
             <a href="#my-work" (click)="closeMenu()">{{ 'header.myWork' | translate }}</a>
             <a href="#contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
-            <app-language-switch />
+            <app-language-switch [inMenu]="true" />
         </nav>
     </section>
 }

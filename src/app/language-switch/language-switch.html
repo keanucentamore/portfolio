@@ -1,4 +1,4 @@
-<div class="language-switch">
+<div class="language-switch" [class.in-menu]="inMenu()">
     <button
         [class.active]="translate.currentLang() === 'de'"
         (click)="switchLanguage('de')"
