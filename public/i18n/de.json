@@ -15,6 +15,13 @@
         "title": "Lass uns zusammen­arbeiten",
         "text1": "Schreibe hier etwas über dich, das mit IT zu tun hat. Warum programmierst du gern? Was inspiriert dich, deine Fähigkeiten weiter auszubauen? Zeige, dass du Lust hast, neue Technologien zu lernen.",
         "text2": "Beschreibe, wie du an Probleme herangehst. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Eigenschaften nennen wie analytisches Denken, Kreativität, Ausdauer und Teamarbeit.",
-        "button": "Nachricht senden"
+        "button": "Nachricht senden",
+        "iAm": "Ich bin",
+        "location1": "wohnhaft in",
+        "location2": "München",
+        "remote1": "offen für",
+        "remote2": "Remote-Arbeit",
+        "relocate1": "bereit",
+        "relocate2": "umzuziehen"
     }
 }

@@ -15,6 +15,13 @@
         "title": "Let's work together",
         "text1": "Write some information about yourself that is IT related. Why are you passionate about programming? What is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.",
         "text2": "Describe your approach to problem solving. Do you learn from each challenge to find the most efficient or elegant solution? You can include some key attributes such as: analytical thinking, creativity, persistence and collaboration.",
-        "button": "Send a message"
+        "button": "Send a message",
+        "iAm": "I am",
+        "location1": "located in",
+        "location2": "Munich",
+        "remote1": "open to work",
+        "remote2": "remote",
+        "relocate1": "open to",
+        "relocate2": "relocate"
     }
 }
