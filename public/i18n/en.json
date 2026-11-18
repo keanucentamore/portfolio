@@ -10,5 +10,11 @@
         "title": "FRONTEND DEVELOPER",
         "scroll": "SCROLL",
         "scrollDown": "Scroll down →"
+    },
+    "about": {
+        "title": "Let's work together",
+        "text1": "Write some information about yourself that is IT related. Why are you passionate about programming? What is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.",
+        "text2": "Describe your approach to problem solving. Do you learn from each challenge to find the most efficient or elegant solution? You can include some key attributes such as: analytical thinking, creativity, persistence and collaboration.",
+        "button": "Send a message"
     }
 }
