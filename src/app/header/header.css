@@ -4,7 +4,7 @@ header {
     padding: 24px 78px 0 77px;
 }
 
-header img {
+.logo {
     display: block;
     width: 64px;
     height: 69px;
@@ -28,4 +28,76 @@ nav a {
     font-weight: 400;
     color: var(--primary);
     text-decoration: none;
+}
+
+.burger {
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.burger img {
+    display: block;
+    width: 32px;
+    height: 30px;
+}
+
+/* Vollbild-Menü für Mobile, liegt über der ganzen Seite */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 106px;
+    background: linear-gradient(var(--white), var(--light-blue));
+}
+
+.mobile-menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 24px 0 25px;
+}
+
+.mobile-menu-top .burger {
+    display: block;
+}
+
+.mobile-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 33px;
+    margin: auto;
+}
+
+.mobile-nav a {
+    width: auto;
+    line-height: 28px;
+}
+
+.mobile-nav app-language-switch {
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+    header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 37px 24px 0 25px;
+    }
+
+    header nav,
+    header app-language-switch {
+        display: none;
+    }
+
+    header .burger {
+        display: block;
+    }
 }

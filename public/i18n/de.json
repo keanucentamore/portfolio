@@ -2,6 +2,7 @@
     "header": {
         "aboutMe": "Über mich",
         "skillSet": "Skills",
-        "myWork": "Projekte"
+        "myWork": "Projekte",
+        "contact": "Kontakt"
     }
 }

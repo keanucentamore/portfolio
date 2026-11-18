@@ -1,6 +1,6 @@
 <header>
     <a routerLink="/">
-        <img src="/icons/portfolio_logo_blue.svg" alt="Logo" />
+        <img class="logo" src="/icons/portfolio_logo_blue.svg" alt="Logo" />
     </a>
     <nav>
         <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
@@ -8,4 +8,27 @@
         <a href="#my-work">{{ 'header.myWork' | translate }}</a>
     </nav>
     <app-language-switch />
+    <button class="burger" (click)="toggleMenu()" aria-label="Menu">
+        <img src="/icons/burger_menu.svg" alt="" />
+    </button>
 </header>
+
+@if (menuOpen()) {
+    <section class="mobile-menu">
+        <div class="mobile-menu-top">
+            <a routerLink="/" (click)="closeMenu()">
+                <img class="logo" src="/icons/portfolio_logo_blue.svg" alt="Logo" />
+            </a>
+            <button class="burger" (click)="toggleMenu()" aria-label="Close menu">
+                <img src="/icons/burger_menu.svg" alt="" />
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#about-me" (click)="closeMenu()">{{ 'header.aboutMe' | translate }}</a>
+            <a href="#skill-set" (click)="closeMenu()">{{ 'header.skillSet' | translate }}</a>
+            <a href="#my-work" (click)="closeMenu()">{{ 'header.myWork' | translate }}</a>
+            <a href="#contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
+            <app-language-switch />
+        </nav>
+    </section>
+}
