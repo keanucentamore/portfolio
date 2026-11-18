@@ -8,8 +8,18 @@
 }
 
 .hero-circle,
+.hero-photo,
 .hero-content {
     grid-area: 1 / 1;
+}
+
+/* Foto steht unten bündig auf dem Hero, wie im Design */
+.hero-photo {
+    align-self: end;
+    width: 761px;
+    height: 917px;
+    margin-left: 31px;
+    object-fit: contain;
 }
 
 .hero-circle {
