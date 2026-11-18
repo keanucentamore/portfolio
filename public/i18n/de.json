@@ -7,6 +7,7 @@
     },
     "hero": {
         "hello": "Hallo! Ich bin Sofia",
-        "title": "FRONTEND ENTWICKLERIN"
+        "title": "FRONTEND ENTWICKLERIN",
+        "scroll": "SCROLLEN"
     }
 }
