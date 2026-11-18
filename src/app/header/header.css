@@ -1,7 +1,6 @@
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 24px 78px 0 77px;
 }
 
@@ -13,6 +12,12 @@ header img {
 
 nav {
     display: flex;
+    margin-top: 18px;
+    margin-left: auto;
+}
+
+app-language-switch {
+    margin: 18px 0 0 41px;
 }
 
 /* Jeder Link bekommt eine feste Breite – so liegen die Anfänge wie im Design im 157px-Raster */

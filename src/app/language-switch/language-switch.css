@@ -1,0 +1,29 @@
+.language-switch {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    line-height: 28px;
+    color: var(--primary);
+}
+
+span {
+    margin: 0 11px 0 10px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Aktive Sprache: fett, dunkleres Blau und unterstrichen */
+button.active {
+    font-weight: 700;
+    color: var(--dark-blue);
+    border-bottom-color: var(--dark-blue);
+}
