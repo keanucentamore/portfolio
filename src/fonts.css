@@ -1,0 +1,48 @@
+/* Baloo 2 ExtraBold entspricht dem alten „Baloo Regular“ aus Figma */
+@font-face {
+    font-display: swap;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/baloo-2-v23-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/montserrat-v31-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/montserrat-v31-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/open-sans-v44-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/open-sans-v44-latin-700.woff2') format('woff2');
+}
