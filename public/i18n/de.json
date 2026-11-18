@@ -8,6 +8,7 @@
     "hero": {
         "hello": "Hallo! Ich bin Sofia",
         "title": "FRONTEND ENTWICKLERIN",
-        "scroll": "SCROLLEN"
+        "scroll": "SCROLLEN",
+        "scrollDown": "Nach unten →"
     }
 }

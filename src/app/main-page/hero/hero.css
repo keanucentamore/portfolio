@@ -2,6 +2,7 @@
 .hero {
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: 100%;
     height: 100vh;
     height: 100dvh;
     background: linear-gradient(var(--white), var(--light-blue));
@@ -98,4 +99,67 @@
     display: block;
     width: 30px;
     height: 30px;
+}
+
+.scroll-mobile {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    /* Das Foto ist im Design unten und rechts vom Rand des Hero angeschnitten */
+    .hero {
+        overflow: hidden;
+    }
+
+    .hero-circle {
+        width: 612px;
+        height: 612px;
+        margin: -22px 0 0 -228px;
+    }
+
+    .hero-photo {
+        align-self: start;
+        width: 495px;
+        height: 596px;
+        margin: 304px 0 0 -62px;
+    }
+
+    .hero-text {
+        padding: 0 0 0 16px;
+        color: var(--white);
+    }
+
+    .hero-text p {
+        margin-top: 44px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .hero-text h1 {
+        width: auto;
+        margin-top: 25px;
+        font-size: 64px;
+        line-height: 62px;
+    }
+
+    .scroll,
+    .social {
+        display: none;
+    }
+
+    .hero-bottom {
+        padding: 0 17px 24px 0;
+    }
+
+    /* writing-mode ist nicht aus dem Kurs: stellt den Text senkrecht, von oben nach unten lesbar */
+    .scroll-mobile {
+        display: block;
+        writing-mode: vertical-rl;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 22px;
+        color: var(--primary);
+        text-decoration: none;
+    }
 }
