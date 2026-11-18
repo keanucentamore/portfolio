@@ -1,0 +1,11 @@
+<section class="skills" id="skill-set">
+    <h2>{{ 'skills.title' | translate }}</h2>
+    <div class="skill-list">
+        @for (skill of skills; track skill.name) {
+            <div class="skill">
+                <img [src]="'/icons/' + skill.icon" alt="" />
+                <p>{{ skill.name }}</p>
+            </div>
+        }
+    </div>
+</section>

@@ -23,5 +23,8 @@
         "remote2": "Remote-Arbeit",
         "relocate1": "bereit",
         "relocate2": "umzuziehen"
+    },
+    "skills": {
+        "title": "Skills"
     }
 }

@@ -23,5 +23,8 @@
         "remote2": "remote",
         "relocate1": "open to",
         "relocate2": "relocate"
+    },
+    "skills": {
+        "title": "Skill set"
     }
 }
