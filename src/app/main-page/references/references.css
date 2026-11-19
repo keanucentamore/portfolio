@@ -54,3 +54,48 @@
     font-size: 18px;
     line-height: 22px;
 }
+
+@media (max-width: 1023px) {
+    .references {
+        height: 421px;
+        padding-top: 52px;
+        text-align: left;
+    }
+
+    .references h2,
+    .subtitle {
+        padding-left: 33px;
+    }
+
+    .references h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        margin-top: 7px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* Slider: die Karten liegen nebeneinander, die Reihe lässt sich seitlich wischen */
+    .reference-list {
+        justify-content: flex-start;
+        gap: 44px;
+        margin-top: 41px;
+        padding: 0 60px 20px;
+        overflow-x: auto;
+        text-align: center;
+    }
+
+    .reference {
+        flex-shrink: 0;
+        width: 230px;
+    }
+
+    .quote {
+        margin-top: 33px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
