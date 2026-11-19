@@ -123,6 +123,24 @@
     cursor: pointer;
 }
 
+/* Runder Button nach oben: Kreis mit dem Farbverlauf der Bubbles, Pfeil mittig */
+.to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    margin: -25px 0 0 8px;
+    background-image: url('/icons/bubble_blue_icon.svg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.to-top img {
+    width: 14px;
+    height: 15px;
+}
+
 /* Rückmeldung nach dem Senden, Platz ist immer reserviert */
 .feedback {
     height: 19px;

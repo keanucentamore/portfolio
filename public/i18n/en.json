@@ -68,6 +68,7 @@
             "messageShort": "Your message needs at least 10 characters."
         },
         "success": "Thank you! Your message has been sent.",
-        "failure": "Sorry, your message could not be sent. Please try again later."
+        "failure": "Sorry, your message could not be sent. Please try again later.",
+        "toTop": "Back to top"
     }
 }

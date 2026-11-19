@@ -68,6 +68,7 @@
             "messageShort": "Deine Nachricht braucht mindestens 10 Zeichen."
         },
         "success": "Danke! Deine Nachricht wurde gesendet.",
-        "failure": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal."
+        "failure": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal.",
+        "toTop": "Nach oben"
     }
 }
