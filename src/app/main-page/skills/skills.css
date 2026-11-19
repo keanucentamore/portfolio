@@ -21,7 +21,7 @@
     justify-content: center;
     row-gap: 75px;
     width: 1140px;
-    margin: 74px 0 0 190px;
+    margin: 74px auto 0;
 }
 
 .skill {
