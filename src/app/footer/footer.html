@@ -2,13 +2,7 @@
     <a class="footer-logo" routerLink="/">
         <img src="/icons/portfolio_logo_white.svg" alt="Logo" />
     </a>
-    <div class="footer-center">
-        <p class="copyright">© Sofia Müller 2022</p>
-        <nav class="legal-links">
-            <a routerLink="/legal-notice">{{ 'footer.legalNotice' | translate }}</a>
-            <a routerLink="/privacy-policy">{{ 'footer.privacyPolicy' | translate }}</a>
-        </nav>
-    </div>
+    <p class="copyright">© Sofia Müller 2022</p>
     <div class="footer-social">
         <a href="https://github.com/keanucentamore" target="_blank">
             <img src="/icons/github_icon.svg" alt="GitHub" />
@@ -20,4 +14,8 @@
             <img src="/icons/linkedin_icon.svg" alt="LinkedIn" />
         </a>
     </div>
+    <nav class="legal-links">
+        <a routerLink="/legal-notice">{{ 'footer.legalNotice' | translate }}</a>
+        <a routerLink="/privacy-policy">{{ 'footer.privacyPolicy' | translate }}</a>
+    </nav>
 </footer>

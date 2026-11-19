@@ -1,7 +1,9 @@
-/* Drei Spalten: Logo links, Text mittig, Icons rechts. 1fr auto 1fr hält die Mitte immer genau mittig */
+/* Drei Spalten: Logo links, Text mittig, Icons rechts. 1fr auto 1fr hält die Mitte immer genau mittig.
+   Das HTML steht in der Reihenfolge der Mobilansicht, am Desktop legen grid-column und grid-row die Plätze fest. */
 footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-content: start;
     align-items: start;
     height: 289px;
     padding: 121px 101px 0 100px;
@@ -10,37 +12,29 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
+.footer-logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .footer-logo img {
     display: block;
     width: 64px;
     height: 69px;
 }
 
-.footer-center {
-    text-align: center;
-}
-
 .copyright {
+    grid-column: 2;
+    grid-row: 1;
     margin-top: 20px;
     font-size: 22px;
     line-height: 27px;
-}
-
-.legal-links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 38px;
-}
-
-.legal-links a {
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--white);
-    text-decoration: none;
+    text-align: center;
 }
 
 .footer-social {
+    grid-column: 3;
+    grid-row: 1;
     display: flex;
     justify-content: flex-end;
     gap: 42px;
@@ -51,4 +45,43 @@ footer {
     display: block;
     width: 30px;
     height: 30px;
+}
+
+.legal-links {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 16px;
+}
+
+.legal-links a {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Mobil: alles mittig untereinander */
+@media (max-width: 1023px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 380px;
+        padding: 66px 0 0;
+    }
+
+    .copyright {
+        margin-top: 26px;
+    }
+
+    .footer-social {
+        margin-top: 29px;
+    }
+
+    .legal-links {
+        margin-top: 33px;
+    }
 }
