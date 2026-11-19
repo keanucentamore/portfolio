@@ -19,4 +19,25 @@ export class Contact {
         message: new FormControl('', [Validators.required, Validators.minLength(10)]),
         privacy: new FormControl(false, Validators.requiredTrue),
     });
+
+    /**
+     * Returns the name field of the contact form.
+     */
+    get name() {
+        return this.contactForm.get('name');
+    }
+
+    /**
+     * Returns the email field of the contact form.
+     */
+    get email() {
+        return this.contactForm.get('email');
+    }
+
+    /**
+     * Returns the message field of the contact form.
+     */
+    get message() {
+        return this.contactForm.get('message');
+    }
 }

@@ -46,7 +46,7 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 9px;
     width: 618px;
 }
 
@@ -70,6 +70,21 @@
     resize: vertical;
 }
 
+.contact-form .field .invalid {
+    border-color: var(--error);
+}
+
+/* Fehlerzeile hat immer ihre Höhe, auch leer: so verschiebt eine Meldung nichts */
+.error {
+    height: 19px;
+    margin-top: 3px;
+    padding-left: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--error);
+}
+
 .contact-form ::placeholder {
     color: #000000;
 }
@@ -78,7 +93,7 @@
     display: flex;
     align-items: flex-start;
     gap: 13px;
-    margin-top: -16px;
+    margin-top: -17px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -102,7 +117,7 @@
 .contact-form .button {
     align-self: center;
     width: 182px;
-    margin-top: -9px;
+    margin-top: 14px;
     height: 58px;
     font-size: 23px;
     cursor: pointer;

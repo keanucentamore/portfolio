@@ -58,6 +58,14 @@
         "privacyBefore": "Ich habe die",
         "privacyLink": "Datenschutzerklärung",
         "privacyAfter": "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
-        "send": "Sag Hallo ;)"
+        "send": "Sag Hallo ;)",
+        "errors": {
+            "nameRequired": "Bitte gib deinen Namen ein.",
+            "nameShort": "Dein Name braucht mindestens 2 Zeichen.",
+            "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+            "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+            "messageRequired": "Bitte schreib eine Nachricht.",
+            "messageShort": "Deine Nachricht braucht mindestens 10 Zeichen."
+        }
     }
 }
