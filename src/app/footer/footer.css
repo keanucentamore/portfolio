@@ -1,0 +1,54 @@
+/* Drei Spalten: Logo links, Text mittig, Icons rechts. 1fr auto 1fr hält die Mitte immer genau mittig */
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    height: 289px;
+    padding: 121px 101px 0 100px;
+    background: radial-gradient(circle at bottom right, var(--dark-blue) 0%, var(--primary) 55%);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-logo img {
+    display: block;
+    width: 64px;
+    height: 69px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 38px;
+}
+
+.legal-links a {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 42px;
+    margin-top: 21px;
+}
+
+.footer-social img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}

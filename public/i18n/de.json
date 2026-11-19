@@ -70,5 +70,9 @@
         "success": "Danke! Deine Nachricht wurde gesendet.",
         "failure": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal.",
         "toTop": "Nach oben"
+    },
+    "footer": {
+        "legalNotice": "Impressum",
+        "privacyPolicy": "Datenschutz"
     }
 }
