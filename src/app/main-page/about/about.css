@@ -10,7 +10,7 @@
 
 .about-left h2 {
     width: 600px;
-    margin-top: 44px;
+    margin-top: 8px;
     font-family: 'Baloo 2', sans-serif;
     font-size: 120px;
     font-weight: 800;
@@ -19,7 +19,7 @@
 }
 
 .about-left h3 {
-    margin: 9px 0 0 261px;
+    margin: 35px 0 0 261px;
     font-family: 'Baloo 2', sans-serif;
     font-size: 44px;
     font-weight: 800;
@@ -29,7 +29,7 @@
 
 .facts {
     display: flex;
-    margin-top: 23px;
+    margin-top: 33px;
     margin-left: 12px;
 }
 
@@ -128,13 +128,13 @@
     }
 
     .about-left h2 {
-        margin: 160px 0 0 39px;
+        margin: 147px 0 0 39px;
         font-size: 64px;
         line-height: 77px;
     }
 
     .about-left h3 {
-        margin: 47px 0 0;
+        margin: 54px 0 0;
         font-size: 32px;
         line-height: 40px;
         text-align: center;
@@ -142,7 +142,7 @@
 
     .facts {
         flex-direction: column;
-        margin: 23px 0 0;
+        margin: 29px 0 0;
     }
 
     .fact,
