@@ -61,7 +61,7 @@
                     {{ 'contact.privacyAfter' | translate }}
                 </span>
             </label>
-            <button class="button" type="submit" disabled>{{ 'contact.send' | translate }}</button>
+            <button class="button" type="submit" [disabled]="contactForm.invalid">{{ 'contact.send' | translate }}</button>
         </form>
     </div>
 </section>
