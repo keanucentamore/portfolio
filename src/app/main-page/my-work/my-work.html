@@ -1,0 +1,5 @@
+<section class="my-work" id="my-work">
+    @for (project of projectsService.projects; track project.name; let i = $index) {
+        <app-project-item [project]="project" [reversed]="i % 2 === 1" />
+    }
+</section>

@@ -1,0 +1,57 @@
+/* Feste Breite: Bild 620 + Abstand + Text 510 */
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 89px;
+    width: 1219px;
+}
+
+/* Jede zweite Zeile: Bild rechts, Text links und rechtsbündig */
+.project.reversed {
+    flex-direction: row-reverse;
+    gap: 86px;
+    width: 1216px;
+}
+
+.project.reversed .project-text {
+    text-align: right;
+}
+
+.project img {
+    width: 620px;
+    height: 393px;
+    object-fit: cover;
+    /* Schatten nur abgelesen: weich nach rechts unten */
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-text {
+    width: 510px;
+    margin-top: 140px;
+}
+
+.project-text h3 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 40px;
+    color: var(--primary);
+}
+
+.technologies {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary);
+}
+
+.description {
+    margin-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #000000;
+}

@@ -1,0 +1,11 @@
+.my-work {
+    display: flex;
+    flex-direction: column;
+    gap: 137px;
+    padding: 372px 0 0 77px;
+}
+
+/* Zeilen mit Bild rechts beginnen weiter rechts, damit das Bild bei x 694 steht */
+.my-work app-project-item:nth-child(even) {
+    margin-left: 21px;
+}

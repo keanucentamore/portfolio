@@ -1,0 +1,8 @@
+<article class="project" [class.reversed]="reversed()">
+    <img [src]="'/images/' + project().image" [alt]="project().name" />
+    <div class="project-text">
+        <h3>{{ project().name }}</h3>
+        <p class="technologies">{{ project().technologies }}</p>
+        <p class="description">{{ project().descriptionKey | translate }}</p>
+    </div>
+</article>
