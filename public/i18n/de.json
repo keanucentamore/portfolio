@@ -31,7 +31,8 @@
         "join": "Aufgabenverwaltung nach dem Vorbild des Kanban-Systems. Aufgaben per Drag-and-drop anlegen und ordnen, Personen und Kategorien zuweisen.",
         "polloLoco": "Jump-and-Run-Spiel mit objektorientiertem Aufbau. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
         "daBubble": "Ein einfaches System zur Kundenverwaltung mit CRUD-Funktionen.",
-        "pokedex": "Eine einfache Bibliothek auf Basis der PokéAPI, die Pokémon-Informationen bereitstellt und ordnet."
+        "pokedex": "Eine einfache Bibliothek auf Basis der PokéAPI, die Pokémon-Informationen bereitstellt und ordnet.",
+        "liveTest": "Live-Test"
     },
     "myWork": {
         "title": "Meine Projekte",

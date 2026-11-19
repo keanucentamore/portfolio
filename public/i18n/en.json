@@ -31,7 +31,8 @@
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "daBubble": "A very Simple Customer Relationship Management system working with CRUD functionality.",
-        "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+        "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+        "liveTest": "Live test"
     },
     "myWork": {
         "title": "My work",

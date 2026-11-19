@@ -55,3 +55,24 @@
     line-height: 19px;
     color: #000000;
 }
+
+.project-links {
+    display: flex;
+    gap: 48px;
+    margin-top: 35px;
+}
+
+.project.reversed .project-links {
+    justify-content: flex-end;
+}
+
+/* Live test: Breite aus dem Verhältnis zur Mobilansicht abgeleitet, am Desktop zeigt die Vorlage nur Github */
+.project-links .button {
+    width: 137px;
+    height: 58px;
+    font-size: 22px;
+}
+
+.project-links .button-filled {
+    width: 152px;
+}
