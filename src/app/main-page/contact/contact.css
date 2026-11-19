@@ -130,3 +130,18 @@
     color: #bbbbbb;
     cursor: default;
 }
+
+/* Autovervollständigung des Browsers (Chrome, Safari, Edge): Feld bleibt weiß, Schrift bleibt schwarz.
+   -webkit-autofill und -webkit-text-fill-color sind nicht aus dem Kurs, ohne sie färbt der Browser das Feld hellblau. */
+.contact-form .field input:-webkit-autofill,
+.contact-form .field input:-webkit-autofill:hover,
+.contact-form .field input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px var(--white) inset;
+    -webkit-text-fill-color: #000000;
+    caret-color: #000000;
+}
+
+.contact-form .field input:-webkit-autofill::first-line {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}

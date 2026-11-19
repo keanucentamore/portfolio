@@ -13,6 +13,7 @@
                 <input
                     type="text"
                     formControlName="name"
+                    autocomplete="name"
                     [placeholder]="'contact.name' | translate"
                     [class.invalid]="name?.touched && name?.invalid"
                 />
@@ -28,6 +29,7 @@
                 <input
                     type="email"
                     formControlName="email"
+                    autocomplete="email"
                     [placeholder]="'contact.email' | translate"
                     [class.invalid]="email?.touched && email?.invalid"
                 />
