@@ -178,3 +178,66 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+
+@media (max-width: 1023px) {
+    .contact {
+        height: auto;
+        padding: 141px 25px 58px;
+    }
+
+    .contact h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 29px;
+        margin-top: 29px;
+    }
+
+    .contact-text,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-text h3 {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .contact-text p {
+        margin-top: 28px;
+    }
+
+    .contact-text .need {
+        margin-top: 28px;
+    }
+
+    .contact-form input[type='text'],
+    .contact-form input[type='email'] {
+        height: 40px;
+    }
+
+    .contact-form textarea {
+        height: 162px;
+    }
+
+    .error {
+        margin-top: 0;
+    }
+
+    .privacy {
+        margin-top: -11px;
+    }
+
+    .contact-form .button {
+        width: 171px;
+        height: 55px;
+        margin-top: -3px;
+    }
+
+    .to-top {
+        margin: 58px 0 0 -1px;
+    }
+}
