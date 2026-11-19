@@ -66,6 +66,8 @@
             "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
             "messageRequired": "Bitte schreib eine Nachricht.",
             "messageShort": "Deine Nachricht braucht mindestens 10 Zeichen."
-        }
+        },
+        "success": "Danke! Deine Nachricht wurde gesendet.",
+        "failure": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal."
     }
 }

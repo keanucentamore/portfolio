@@ -8,7 +8,7 @@
                 {{ 'contact.need' | translate }} <strong>{{ 'contact.contactMe' | translate }}</strong>
             </p>
         </div>
-        <form class="contact-form" [formGroup]="contactForm">
+        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="field">
                 <input
                     type="text"
@@ -63,7 +63,20 @@
                     {{ 'contact.privacyAfter' | translate }}
                 </span>
             </label>
-            <button class="button" type="submit" [disabled]="contactForm.invalid">{{ 'contact.send' | translate }}</button>
+            <button
+                class="button"
+                type="submit"
+                [disabled]="contactForm.invalid || sendStatus() === 'sending'"
+            >
+                {{ 'contact.send' | translate }}
+            </button>
+            <p class="feedback" [class.feedback-error]="sendStatus() === 'error'">
+                @if (sendStatus() === 'success') {
+                    {{ 'contact.success' | translate }}
+                } @else if (sendStatus() === 'error') {
+                    {{ 'contact.failure' | translate }}
+                }
+            </p>
         </form>
     </div>
 </section>

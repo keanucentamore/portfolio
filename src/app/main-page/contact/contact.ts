@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
@@ -20,6 +20,8 @@ export class Contact {
         privacy: new FormControl(false, Validators.requiredTrue),
     });
 
+    sendStatus = signal('idle');
+
     /**
      * Returns the name field of the contact form.
      */
@@ -39,5 +41,30 @@ export class Contact {
      */
     get message() {
         return this.contactForm.get('message');
+    }
+
+    /**
+     * Sends the form data to the mail endpoint and shows whether it worked.
+     */
+    async onSubmit() {
+        if (this.contactForm.invalid) {
+            this.contactForm.markAllAsTouched();
+            return;
+        }
+        this.sendStatus.set('sending');
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(this.contactForm.value),
+            });
+            if (!response.ok) {
+                throw new Error('Mail could not be sent');
+            }
+            this.sendStatus.set('success');
+            this.contactForm.reset();
+        } catch (error) {
+            this.sendStatus.set('error');
+        }
     }
 }

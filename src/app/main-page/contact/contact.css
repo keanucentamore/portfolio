@@ -123,6 +123,21 @@
     cursor: pointer;
 }
 
+/* Rückmeldung nach dem Senden, Platz ist immer reserviert */
+.feedback {
+    height: 19px;
+    margin-top: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.feedback-error {
+    color: var(--error);
+}
+
 /* Gesperrter Button: grau wie im Design */
 .contact-form .button:disabled {
     border-color: #bbbbbb;
