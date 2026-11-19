@@ -8,12 +8,12 @@
                 {{ 'contact.need' | translate }} <strong>{{ 'contact.contactMe' | translate }}</strong>
             </p>
         </div>
-        <form class="contact-form">
-            <input type="text" name="name" [placeholder]="'contact.name' | translate" />
-            <input type="email" name="email" [placeholder]="'contact.email' | translate" />
-            <textarea name="message" [placeholder]="'contact.message' | translate"></textarea>
+        <form class="contact-form" [formGroup]="contactForm">
+            <input type="text" formControlName="name" [placeholder]="'contact.name' | translate" />
+            <input type="email" formControlName="email" [placeholder]="'contact.email' | translate" />
+            <textarea formControlName="message" [placeholder]="'contact.message' | translate"></textarea>
             <label class="privacy">
-                <input type="checkbox" name="privacy" />
+                <input type="checkbox" formControlName="privacy" />
                 <span>
                     {{ 'contact.privacyBefore' | translate }}
                     <a routerLink="/privacy-policy">{{ 'contact.privacyLink' | translate }}</a>
