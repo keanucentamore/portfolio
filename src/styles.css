@@ -16,6 +16,22 @@ body {
     background-color: var(--white);
 }
 
+/* Gemeinsamer Button-Stil (About, Projekte, Kontakt), Größe legt jede Component selbst fest */
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background-color: var(--white);
+    /* Schatten nur abgelesen: sehr weich und hell, wie im Design */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--primary);
+    text-decoration: none;
+}
+
 .d-none {
     display: none !important;
 }

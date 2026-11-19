@@ -96,22 +96,10 @@
 }
 
 .button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     width: 254px;
     height: 58px;
     margin-top: 40px;
-    border: 2px solid var(--primary);
-    border-radius: 10px;
-    background-color: var(--white);
-    /* Schatten nur abgelesen: sehr weich und hell, wie im Design */
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    font-family: 'Montserrat', sans-serif;
     font-size: 23px;
-    font-weight: 400;
-    color: var(--primary);
-    text-decoration: none;
 }
 
 @media (max-width: 1023px) {
