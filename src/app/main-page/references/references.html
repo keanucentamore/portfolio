@@ -1,0 +1,13 @@
+<section class="references">
+    <h2>{{ 'references.title' | translate }}</h2>
+    <p class="subtitle">{{ 'references.subtitle' | translate }}</p>
+    <div class="reference-list">
+        @for (reference of references; track reference.name) {
+            <article class="reference">
+                <h3>{{ reference.name }}</h3>
+                <p class="project">{{ 'references.project' | translate }} {{ reference.project }}</p>
+                <p class="quote">{{ reference.quoteKey | translate }}</p>
+            </article>
+        }
+    </div>
+</section>

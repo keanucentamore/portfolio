@@ -37,5 +37,13 @@
     "myWork": {
         "title": "Meine Projekte",
         "intro": "Hier findest du eine Auswahl meiner Arbeiten – probiere die Projekte aus und sieh meine Fähigkeiten in Aktion."
+    },
+    "references": {
+        "title": "Teamplayer gesucht?",
+        "subtitle": "Das sagen meine Kolleginnen und Kollegen über mich.",
+        "project": "Projekt",
+        "james": "„Sofia ist zuverlässig und freundlich. Sie arbeitet strukturiert und schreibt sauberen Code. Ich kann sie als Kollegin nur empfehlen.“",
+        "evelyn": "„Sofia ist eine vertrauenswürdige Teamplayerin und behält auch unter Termindruck die Ruhe. Strukturierte Arbeit und sauberer Code.“",
+        "noah": "„Sofia hat im Team Inhalte entwickelt, aufbereitet und geliefert. Sie ist zuverlässig und freundlich.“"
     }
 }
