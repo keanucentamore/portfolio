@@ -76,3 +76,49 @@
 .project-links .button-filled {
     width: 152px;
 }
+
+/* Mobil: Bild oben, Text darunter, alles mittig */
+@media (max-width: 1023px) {
+    .project,
+    .project.reversed {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 340px;
+    }
+
+    .project img {
+        width: 340px;
+        height: 215px;
+    }
+
+    .project-text,
+    .project.reversed .project-text {
+        width: 340px;
+        margin-top: 52px;
+        text-align: center;
+    }
+
+    .technologies {
+        margin-top: 15px;
+    }
+
+    .description {
+        margin-top: 22px;
+    }
+
+    .project-links,
+    .project.reversed .project-links {
+        justify-content: center;
+        margin-top: 34px;
+    }
+
+    .project-links .button {
+        width: 127px;
+        height: 55px;
+    }
+
+    .project-links .button-filled {
+        width: 142px;
+    }
+}

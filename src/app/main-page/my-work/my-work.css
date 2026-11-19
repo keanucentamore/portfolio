@@ -31,3 +31,30 @@
 .project-list app-project-item:nth-child(even) {
     margin-left: 21px;
 }
+
+@media (max-width: 1023px) {
+    .my-work {
+        padding: 140px 25px 0;
+    }
+
+    .my-work h2 {
+        font-size: 64px;
+        line-height: 77px;
+    }
+
+    .intro {
+        width: auto;
+        margin-top: 1px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .project-list {
+        gap: 111px;
+        margin-top: 66px;
+    }
+
+    .project-list app-project-item:nth-child(even) {
+        margin-left: 0;
+    }
+}
