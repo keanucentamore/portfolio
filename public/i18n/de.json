@@ -45,5 +45,19 @@
         "james": "„Sofia ist zuverlässig und freundlich. Sie arbeitet strukturiert und schreibt sauberen Code. Ich kann sie als Kollegin nur empfehlen.“",
         "evelyn": "„Sofia ist eine vertrauenswürdige Teamplayerin und behält auch unter Termindruck die Ruhe. Strukturierte Arbeit und sauberer Code.“",
         "noah": "„Sofia hat im Team Inhalte entwickelt, aufbereitet und geliefert. Sie ist zuverlässig und freundlich.“"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "problem": "Ein Problem zu lösen?",
+        "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du mit deiner Arbeit ihre Projekte bereicherst.",
+        "need": "Du suchst einen Frontend-Entwickler?",
+        "contactMe": "Schreib mir!",
+        "name": "Dein Name",
+        "email": "Deine E-Mail",
+        "message": "Deine Nachricht",
+        "privacyBefore": "Ich habe die",
+        "privacyLink": "Datenschutzerklärung",
+        "privacyAfter": "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
+        "send": "Sag Hallo ;)"
     }
 }

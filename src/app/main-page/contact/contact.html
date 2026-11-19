@@ -1,0 +1,26 @@
+<section class="contact" id="contact">
+    <h2>{{ 'contact.title' | translate }}</h2>
+    <div class="contact-content">
+        <div class="contact-text">
+            <h3>{{ 'contact.problem' | translate }}</h3>
+            <p>{{ 'contact.text' | translate }}</p>
+            <p class="need">
+                {{ 'contact.need' | translate }} <strong>{{ 'contact.contactMe' | translate }}</strong>
+            </p>
+        </div>
+        <form class="contact-form">
+            <input type="text" name="name" [placeholder]="'contact.name' | translate" />
+            <input type="email" name="email" [placeholder]="'contact.email' | translate" />
+            <textarea name="message" [placeholder]="'contact.message' | translate"></textarea>
+            <label class="privacy">
+                <input type="checkbox" name="privacy" />
+                <span>
+                    {{ 'contact.privacyBefore' | translate }}
+                    <a routerLink="/privacy-policy">{{ 'contact.privacyLink' | translate }}</a>
+                    {{ 'contact.privacyAfter' | translate }}
+                </span>
+            </label>
+            <button class="button" type="submit" disabled>{{ 'contact.send' | translate }}</button>
+        </form>
+    </div>
+</section>
