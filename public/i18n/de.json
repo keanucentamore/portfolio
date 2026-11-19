@@ -32,5 +32,9 @@
         "polloLoco": "Jump-and-Run-Spiel mit objektorientiertem Aufbau. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
         "daBubble": "Ein einfaches System zur Kundenverwaltung mit CRUD-Funktionen.",
         "pokedex": "Eine einfache Bibliothek auf Basis der PokéAPI, die Pokémon-Informationen bereitstellt und ordnet."
+    },
+    "myWork": {
+        "title": "Meine Projekte",
+        "intro": "Hier findest du eine Auswahl meiner Arbeiten – probiere die Projekte aus und sieh meine Fähigkeiten in Aktion."
     }
 }

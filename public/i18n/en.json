@@ -32,5 +32,9 @@
         "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
         "daBubble": "A very Simple Customer Relationship Management system working with CRUD functionality.",
         "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    "myWork": {
+        "title": "My work",
+        "intro": "Explore a selection of my work here - Interact with projects to see my skills in action."
     }
 }

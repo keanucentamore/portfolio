@@ -1,11 +1,33 @@
 .my-work {
+    padding: 132px 0 0 77px;
+}
+
+.my-work h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 110px;
+    color: var(--primary);
+}
+
+.intro {
+    width: 600px;
+    margin-top: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+}
+
+.project-list {
     display: flex;
     flex-direction: column;
     gap: 137px;
-    padding: 372px 0 0 77px;
+    margin-top: 41px;
 }
 
 /* Zeilen mit Bild rechts beginnen weiter rechts, damit das Bild bei x 694 steht */
-.my-work app-project-item:nth-child(even) {
+.project-list app-project-item:nth-child(even) {
     margin-left: 21px;
 }
