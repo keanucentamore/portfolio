@@ -306,9 +306,12 @@
         margin: 40px auto 0;
     }
 
-    /* Auf Mobile zeigt die Vorlage nur einen kleinen Kreis */
+    /* Auf Mobile: halber Kreis unter dem Hero und ein kleiner Kreis rechts */
     .bubble-big {
-        display: none;
+        top: -83px;
+        left: 107px;
+        width: 157px;
+        height: 157px;
     }
 
     /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */

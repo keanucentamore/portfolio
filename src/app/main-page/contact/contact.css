@@ -405,10 +405,17 @@
         margin: 58px 0 0 -1px;
     }
 
-    /* Auf Mobile zeigt die Vorlage nur einen Kreis */
-    .bubble-2,
-    .bubble-3 {
+    /* Auf Mobile: großer Kreis oben rechts und ein kleiner unten rechts */
+    .bubble-2 {
         display: none;
+    }
+
+    .bubble-3 {
+        top: 946px;
+        right: 6px;
+        left: auto;
+        width: 42px;
+        height: 42px;
     }
 
     /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */
