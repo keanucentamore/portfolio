@@ -7,9 +7,9 @@
         />
     </a>
     <nav>
-        <a href="#about-me">{{ 'header.aboutMe' | translate }}</a>
-        <a href="#skill-set">{{ 'header.skillSet' | translate }}</a>
-        <a href="#my-work">{{ 'header.myWork' | translate }}</a>
+        <a routerLink="/" fragment="about-me">{{ 'header.aboutMe' | translate }}</a>
+        <a routerLink="/" fragment="skill-set">{{ 'header.skillSet' | translate }}</a>
+        <a routerLink="/" fragment="my-work">{{ 'header.myWork' | translate }}</a>
     </nav>
     <app-language-switch />
     <button class="burger" (click)="toggleMenu()" aria-label="Menu">
@@ -28,10 +28,10 @@
             </button>
         </div>
         <nav class="mobile-nav">
-            <a href="#about-me" (click)="closeMenu()">{{ 'header.aboutMe' | translate }}</a>
-            <a href="#skill-set" (click)="closeMenu()">{{ 'header.skillSet' | translate }}</a>
-            <a href="#my-work" (click)="closeMenu()">{{ 'header.myWork' | translate }}</a>
-            <a href="#contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
+            <a routerLink="/" fragment="about-me" (click)="closeMenu()">{{ 'header.aboutMe' | translate }}</a>
+            <a routerLink="/" fragment="skill-set" (click)="closeMenu()">{{ 'header.skillSet' | translate }}</a>
+            <a routerLink="/" fragment="my-work" (click)="closeMenu()">{{ 'header.myWork' | translate }}</a>
+            <a routerLink="/" fragment="contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
             <app-language-switch [inMenu]="true" />
         </nav>
     </section>
