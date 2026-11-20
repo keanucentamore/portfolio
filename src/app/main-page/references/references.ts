@@ -8,9 +8,25 @@ import { TranslatePipe } from '@ngx-translate/core';
     styleUrl: './references.css',
 })
 export class References {
+    // quoteKey bleibt leer, bis der echte Text da ist; die Karte zeigt dann nur Name, Rolle und Projekt
     references = [
-        { name: 'James Rugman', project: 'Join', quoteKey: 'references.james' },
-        { name: 'Evelyn Marx', project: 'DA Bubble', quoteKey: 'references.evelyn' },
-        { name: 'Noah Müller', project: 'Pollo Loco', quoteKey: 'references.noah' },
+        {
+            name: 'David Peters',
+            roleKey: 'references.roles.david',
+            projectKey: 'references.projects.bstage',
+            quoteKey: '',
+        },
+        {
+            name: 'Lorenz Wagner',
+            roleKey: 'references.roles.lorenz',
+            projectKey: 'references.projects.staffAlert',
+            quoteKey: '',
+        },
+        {
+            name: 'Giuliano Gioia',
+            roleKey: 'references.roles.giuliano',
+            projectKey: 'references.projects.training',
+            quoteKey: '',
+        },
     ];
 }

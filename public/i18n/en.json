@@ -47,10 +47,16 @@
     "references": {
         "title": "Need a teamplayer?",
         "subtitle": "Here is what my colleagues say about me.",
-        "project": "Project",
-        "james": "“Sofia is a reliable and friendly person. Work in a structured way and write a clear code. I highly recommend her as a colleague.”",
-        "evelyn": "“Sofia is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.”",
-        "noah": "“Sofia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person.”"
+        "roles": {
+            "david": "CEO @ QUADRA SaaS UG",
+            "lorenz": "CEO @ Sinners GmbH",
+            "giuliano": "Instructor @ Developer Akademie GmbH"
+        },
+        "projects": {
+            "bstage": "Project BSTAGE",
+            "staffAlert": "Project Staff Alert System",
+            "training": "All projects of my frontend training"
+        }
     },
     "contact": {
         "title": "Contact",

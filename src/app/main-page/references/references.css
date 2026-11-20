@@ -43,10 +43,15 @@
     line-height: 29px;
 }
 
+.role,
 .project {
     margin-top: 4px;
     font-size: 16px;
     line-height: 20px;
+}
+
+.project {
+    font-weight: 700;
 }
 
 .quote {

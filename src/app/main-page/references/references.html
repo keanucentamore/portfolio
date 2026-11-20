@@ -5,8 +5,11 @@
         @for (reference of references; track reference.name) {
             <article class="reference">
                 <h3>{{ reference.name }}</h3>
-                <p class="project">{{ 'references.project' | translate }} {{ reference.project }}</p>
-                <p class="quote">{{ reference.quoteKey | translate }}</p>
+                <p class="role">{{ reference.roleKey | translate }}</p>
+                <p class="project">{{ reference.projectKey | translate }}</p>
+                @if (reference.quoteKey) {
+                    <p class="quote">{{ reference.quoteKey | translate }}</p>
+                }
             </article>
         }
     </div>
