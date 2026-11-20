@@ -1,3 +1,34 @@
 <app-header />
-<p>legal-notice works!</p>
+<main class="legal">
+    <h1>{{ 'legal.title' | translate }}</h1>
+    <h2>{{ 'legal.imprint' | translate }}</h2>
+    <p class="list-item">Keanu Centamore</p>
+    <p class="list-item">Recklinghauser Str. 275</p>
+    <p class="list-item">44581 Castrop-Rauxel</p>
+
+    <h3>{{ 'legal.contactTitle' | translate }}</h3>
+    <p>{{ 'legal.email' | translate }}: contact&#64;keanucentamore.de</p>
+
+    <h3>{{ 'legal.termsTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.terms' | translate"></p>
+
+    <h3>{{ 'legal.scopeTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.scope1' | translate"></p>
+    <p class="paragraph" [innerHTML]="'legal.scope2' | translate"></p>
+
+    <h3>{{ 'legal.rightsTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.rights' | translate"></p>
+
+    <h3>{{ 'legal.useTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.use' | translate"></p>
+
+    <h3>{{ 'legal.disclaimerTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.disclaimer' | translate"></p>
+
+    <h3>{{ 'legal.indemnityTitle' | translate }}</h3>
+    <p [innerHTML]="'legal.indemnity' | translate"></p>
+
+    <p class="paragraph">{{ 'legal.questions' | translate }}</p>
+    <p class="paragraph">{{ 'legal.date' | translate }}</p>
+</main>
 <app-footer />

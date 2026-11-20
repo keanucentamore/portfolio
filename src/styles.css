@@ -38,6 +38,11 @@ body {
     color: var(--white);
 }
 
+/* Blau hervorgehobene Wörter in Texten aus den Übersetzungsdateien (per [innerHTML] eingesetzt) */
+.highlight {
+    color: var(--primary);
+}
+
 .d-none {
     display: none !important;
 }
