@@ -81,13 +81,6 @@
     height: 237px;
 }
 
-.bubble-7 {
-    top: 1742px;
-    left: 1201px;
-    width: 97px;
-    height: 97px;
-}
-
 /* Tablet bis 1439 px: wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .my-work {
@@ -156,13 +149,6 @@
         width: 16.46vw;
         height: 16.46vw;
     }
-
-    .bubble-7 {
-        top: 120.97vw;
-        left: 83.4vw;
-        width: 6.74vw;
-        height: 6.74vw;
-    }
 }
 
 @media (max-width: 1023px) {
@@ -191,18 +177,33 @@
         margin-left: 0;
     }
 
-    /* Auf Mobile zeigt die Vorlage fünf Kreise: oben rechts, hinter Join links, hinter Pollo Loco rechts,
-       hinter DA Bubble links und neben Pokédex rechts */
+    /* Auf Mobile zeigt die Vorlage vier Kreise: oben rechts, hinter Join links, hinter Pollo Loco rechts und hinter dem dritten Projekt links */
     .bubble-2,
     .bubble-5 {
         display: none;
     }
 
+    /* Der Kreis hinter dem dritten Projekt hängt direkt am Projekt: die Texte darüber sind je nach Sprache
+       unterschiedlich lang, so bleibt er trotzdem genau am Bild. ::before ist ein Element, das nur per CSS entsteht. */
     .bubble-6 {
-        top: 1328px;
+        display: none;
+    }
+
+    .project-list app-project-item:nth-of-type(3) {
+        display: block;
+        position: relative;
+    }
+
+    .project-list app-project-item:nth-of-type(3)::before {
+        content: '';
+        position: absolute;
+        top: 4px;
         left: -17px;
+        z-index: -1;
         width: 140px;
         height: 140px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary) 53%, var(--dark-blue) 87%);
     }
 
     .bubble-3 {
@@ -218,14 +219,6 @@
         left: auto;
         width: 269px;
         height: 269px;
-    }
-
-    .bubble-7 {
-        top: 2255px;
-        right: -40px;
-        left: auto;
-        width: 36px;
-        height: 36px;
     }
 
     /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */

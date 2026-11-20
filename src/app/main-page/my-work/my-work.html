@@ -8,7 +8,6 @@
         <div class="bubble bubble-4" aria-hidden="true"></div>
         <div class="bubble bubble-5" aria-hidden="true"></div>
         <div class="bubble bubble-6" aria-hidden="true"></div>
-        <div class="bubble bubble-7" aria-hidden="true"></div>
         @for (project of projectsService.projects; track project.name; let i = $index) {
             <app-project-item [project]="project" [reversed]="i % 2 === 1" />
         }

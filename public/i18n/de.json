@@ -36,9 +36,8 @@
     },
     "projects": {
         "join": "Aufgabenverwaltung nach dem Vorbild des Kanban-Systems. Aufgaben per Drag-and-drop anlegen und ordnen, Personen und Kategorien zuweisen.",
-        "polloLoco": "Jump-and-Run-Spiel mit objektorientiertem Aufbau. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-        "daBubble": "Ein einfaches System zur Kundenverwaltung mit CRUD-Funktionen.",
-        "pokedex": "Eine einfache Bibliothek auf Basis der PokéAPI, die Pokémon-Informationen bereitstellt und ordnet.",
+        "polloLoco": "Ein Jump-and-Run-Spiel mit objektorientiertem JavaScript und HTML5 Canvas. Hilf Pepe, die Wüste zu durchqueren, Münzen und Salsaflaschen zu sammeln und die riesige Boss-Henne zu besiegen.",
+        "pokedex": "Ein Pokédex auf Basis der PokéAPI im Look des Geräts aus der Serie. Pokémon laden, suchen und durchblättern und Details mit Werten und Entwicklungen öffnen.",
         "liveTest": "Live-Test"
     },
     "myWork": {

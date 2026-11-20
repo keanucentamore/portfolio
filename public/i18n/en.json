@@ -36,9 +36,8 @@
     },
     "projects": {
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "polloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "daBubble": "A very Simple Customer Relationship Management system working with CRUD functionality.",
-        "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+        "polloLoco": "A jump-and-run game built with object-oriented JavaScript and HTML5 Canvas. Help Pepe cross the desert, collect coins and salsa bottles and defeat the giant boss hen.",
+        "pokedex": "A Pokédex based on the PokéAPI, designed like the device from the series. Load, search and browse Pokémon and open details with stats and evolution chains.",
         "liveTest": "Live test"
     },
     "myWork": {
