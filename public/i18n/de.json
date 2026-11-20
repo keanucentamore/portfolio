@@ -129,5 +129,8 @@
         "encryptionTitle": "SSL-/TLS-Verschlüsselung",
         "encryption": "Aus Sicherheitsgründen nutzt diese Website eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennst du am Schloss-Symbol und an „https://“ in der Adresszeile deines Browsers.",
         "date": "Stand: 20. November 2026"
+    },
+    "meta": {
+        "title": "Keanu Centamore – Frontend-Entwickler"
     }
 }

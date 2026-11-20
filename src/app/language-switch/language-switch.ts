@@ -1,4 +1,5 @@
 import { Component, inject, input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,14 +10,18 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageSwitch {
     translate = inject(TranslateService);
+    title = inject(Title);
     inMenu = input(false);
 
     /**
-     * Switches all texts of the page to the given language.
+     * Switches all texts of the page and the title in the browser tab to the given language.
      * @param lang - The language code, 'de' or 'en'.
      */
     switchLanguage(lang: string) {
-        this.translate.use(lang);
+        // Erst wenn die Sprachdatei geladen ist, steht der übersetzte Titel bereit
+        this.translate.use(lang).subscribe(() => {
+            this.title.setTitle(this.translate.instant('meta.title'));
+        });
         // Sagt Browser und Screenreader, in welcher Sprache die Seite gerade ist
         document.documentElement.lang = lang;
     }
