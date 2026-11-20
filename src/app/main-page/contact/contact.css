@@ -176,7 +176,8 @@
     cursor: pointer;
 }
 
-.privacy input:hover {
+.privacy input:hover,
+.privacy input:focus-visible {
     background-color: #c2d5ff;
 }
 
@@ -195,7 +196,8 @@
     text-decoration: none;
 }
 
-.privacy a:hover {
+.privacy a:hover,
+.privacy a:focus-visible {
     font-weight: 700;
     color: var(--dark-blue);
     text-decoration: underline;
@@ -225,7 +227,8 @@
 }
 
 /* Im Prototyp nicht gezeigt: leicht größer wie die Icons im Footer */
-.to-top:hover {
+.to-top:hover,
+.to-top:focus-visible {
     transform: scale(1.15);
 }
 

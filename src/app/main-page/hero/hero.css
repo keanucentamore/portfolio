@@ -103,7 +103,8 @@
 }
 
 /* Hover laut Prototyp: das Icon rückt etwas nach links */
-.social a:hover img {
+.social a:hover img,
+.social a:focus-visible img {
     transform: translateX(-6px);
 }
 

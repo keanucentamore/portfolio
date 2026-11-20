@@ -3,7 +3,7 @@
         <img
             class="logo"
             [src]="whiteLogo() ? '/icons/portfolio_logo_white.svg' : '/icons/portfolio_logo_blue.svg'"
-            alt="Logo"
+            [alt]="'header.home' | translate"
         />
     </a>
     <nav>
@@ -12,18 +12,31 @@
         <a routerLink="/" fragment="my-work">{{ 'header.myWork' | translate }}</a>
     </nav>
     <app-language-switch />
-    <button class="burger" (click)="toggleMenu()" aria-label="Menu">
+    <button
+        class="burger"
+        (click)="toggleMenu()"
+        [attr.aria-label]="'header.openMenu' | translate"
+        [attr.aria-expanded]="menuOpen()"
+    >
         <img src="/icons/burger_menu.svg" alt="" />
     </button>
 </header>
 
 @if (menuOpen()) {
-    <section class="mobile-menu">
+    <section class="mobile-menu" (keydown.escape)="closeMenu()">
         <div class="mobile-menu-top">
             <a routerLink="/" (click)="closeMenu()">
-                <img class="logo" src="/icons/portfolio_logo_blue.svg" alt="Logo" />
+                <img
+                    class="logo"
+                    src="/icons/portfolio_logo_blue.svg"
+                    [alt]="'header.home' | translate"
+                />
             </a>
-            <button class="burger" (click)="toggleMenu()" aria-label="Close menu">
+            <button
+                class="burger"
+                (click)="toggleMenu()"
+                [attr.aria-label]="'header.closeMenu' | translate"
+            >
                 <img src="/icons/burger_menu.svg" alt="" />
             </button>
         </div>

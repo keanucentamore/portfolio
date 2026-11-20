@@ -21,7 +21,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus-visible {
     font-weight: 700;
 }
 

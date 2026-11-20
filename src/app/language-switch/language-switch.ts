@@ -17,5 +17,7 @@ export class LanguageSwitch {
      */
     switchLanguage(lang: string) {
         this.translate.use(lang);
+        // Sagt Browser und Screenreader, in welcher Sprache die Seite gerade ist
+        document.documentElement.lang = lang;
     }
 }

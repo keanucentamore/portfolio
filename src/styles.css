@@ -35,8 +35,9 @@ body {
     transition: transform 125ms ease-in-out;
 }
 
-/* Hover laut Prototyp: Farbverlauf, weiße Schrift, etwas größer */
-.button:hover {
+/* Hover laut Prototyp: Farbverlauf, weiße Schrift, etwas größer (auch beim Tastatur-Fokus) */
+.button:hover,
+.button:focus-visible {
     border-color: transparent;
     background: linear-gradient(90deg, var(--primary) 30%, var(--dark-blue) 100%) border-box;
     box-shadow: 0 6px 14px rgba(0, 67, 240, 0.3);
@@ -52,6 +53,13 @@ body {
 /* Blau hervorgehobene Wörter in Texten aus den Übersetzungsdateien (per [innerHTML] eingesetzt) */
 .highlight {
     color: var(--primary);
+}
+
+/* Sichtbarer Rahmen, wenn man mit der Tab-Taste über die Seite geht.
+   :focus-visible ist nicht aus dem Kurs: anders als :focus erscheint der Rahmen nur bei Tastatur, nicht beim Mausklick */
+:focus-visible {
+    outline: 2px solid var(--dark-blue);
+    outline-offset: 4px;
 }
 
 .d-none {

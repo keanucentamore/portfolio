@@ -3,7 +3,10 @@
         "aboutMe": "Über mich",
         "skillSet": "Skills",
         "myWork": "Projekte",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "home": "Keanu Centamore – Startseite",
+        "openMenu": "Menü öffnen",
+        "closeMenu": "Menü schließen"
     },
     "hero": {
         "hello": "Hallo! Ich bin Sofia",
