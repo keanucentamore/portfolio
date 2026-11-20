@@ -77,6 +77,7 @@
     },
     "legal": {
         "title": "Impressum",
+        "back": "Zurück zur Startseite",
         "imprint": "Angaben gemäß § 5 DDG",
         "contactTitle": "Kontakt",
         "email": "E-Mail",
@@ -97,7 +98,7 @@
         "date": "Stand: 20. November 2026"
     },
     "privacy": {
-        "title": "Datenschutzerklärung",
+        "title": "Datenschutz",
         "controllerTitle": "Verantwortlicher",
         "controller": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>Keanu Centamore, Recklinghauser Str. 275, 44581 Castrop-Rauxel<br>E-Mail: contact@keanucentamore.de",
         "hostingTitle": "Hosting und Server-Logfiles",

@@ -77,6 +77,7 @@
     },
     "legal": {
         "title": "Legal Notice",
+        "back": "Back to home page",
         "imprint": "Imprint",
         "contactTitle": "Contact",
         "email": "Email",
