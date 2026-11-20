@@ -44,6 +44,13 @@ export class Contact {
     }
 
     /**
+     * Returns the privacy checkbox of the contact form.
+     */
+    get privacy() {
+        return this.contactForm.get('privacy');
+    }
+
+    /**
      * Sends the form data to the mail endpoint and shows whether it worked.
      */
     async onSubmit() {

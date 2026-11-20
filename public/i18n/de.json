@@ -60,12 +60,13 @@
         "privacyAfter": "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu.",
         "send": "Sag Hallo ;)",
         "errors": {
-            "nameRequired": "Bitte gib deinen Namen ein.",
+            "nameRequired": "Dein Name fehlt",
             "nameShort": "Dein Name braucht mindestens 2 Zeichen.",
-            "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+            "emailRequired": "Deine E-Mail-Adresse fehlt",
             "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
-            "messageRequired": "Bitte schreib eine Nachricht.",
-            "messageShort": "Deine Nachricht braucht mindestens 10 Zeichen."
+            "messageRequired": "Deine Nachricht ist leer",
+            "messageShort": "Deine Nachricht braucht mindestens 10 Zeichen.",
+            "privacyRequired": "Bitte akzeptiere die Datenschutzerklärung."
         },
         "success": "Danke! Deine Nachricht wurde gesendet.",
         "failure": "Deine Nachricht konnte leider nicht gesendet werden. Bitte versuche es später noch einmal.",

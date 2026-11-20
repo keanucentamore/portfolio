@@ -60,12 +60,13 @@
         "privacyAfter": "and agree to the processing of my data as outlined.",
         "send": "Say hello ;)",
         "errors": {
-            "nameRequired": "Please enter your name.",
+            "nameRequired": "Your name is required",
             "nameShort": "Your name needs at least 2 characters.",
-            "emailRequired": "Please enter your email address.",
+            "emailRequired": "Your email is required",
             "emailInvalid": "Please enter a valid email address.",
-            "messageRequired": "Please write a message.",
-            "messageShort": "Your message needs at least 10 characters."
+            "messageRequired": "Your message is empty",
+            "messageShort": "Your message needs at least 10 characters.",
+            "privacyRequired": "Please accept the privacy policy."
         },
         "success": "Thank you! Your message has been sent.",
         "failure": "Sorry, your message could not be sent. Please try again later.",

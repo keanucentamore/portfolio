@@ -13,13 +13,19 @@
         </div>
         <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="field">
-                <input
-                    type="text"
-                    formControlName="name"
-                    autocomplete="name"
-                    [placeholder]="'contact.name' | translate"
-                    [class.invalid]="name?.touched && name?.invalid"
-                />
+                <div class="field-box">
+                    <input
+                        id="name"
+                        type="text"
+                        formControlName="name"
+                        autocomplete="name"
+                        placeholder=" "
+                    />
+                    <label for="name">{{ 'contact.name' | translate }}</label>
+                    @if (name?.touched && name?.invalid) {
+                        <img class="error-icon" src="/icons/error_icon.svg" alt="" />
+                    }
+                </div>
                 <p class="error">
                     @if (name?.touched && name?.hasError('required')) {
                         {{ 'contact.errors.nameRequired' | translate }}
@@ -29,13 +35,19 @@
                 </p>
             </div>
             <div class="field">
-                <input
-                    type="email"
-                    formControlName="email"
-                    autocomplete="email"
-                    [placeholder]="'contact.email' | translate"
-                    [class.invalid]="email?.touched && email?.invalid"
-                />
+                <div class="field-box">
+                    <input
+                        id="email"
+                        type="email"
+                        formControlName="email"
+                        autocomplete="email"
+                        placeholder=" "
+                    />
+                    <label for="email">{{ 'contact.email' | translate }}</label>
+                    @if (email?.touched && email?.invalid) {
+                        <img class="error-icon" src="/icons/error_icon.svg" alt="" />
+                    }
+                </div>
                 <p class="error">
                     @if (email?.touched && email?.hasError('required')) {
                         {{ 'contact.errors.emailRequired' | translate }}
@@ -45,11 +57,13 @@
                 </p>
             </div>
             <div class="field">
-                <textarea
-                    formControlName="message"
-                    [placeholder]="'contact.message' | translate"
-                    [class.invalid]="message?.touched && message?.invalid"
-                ></textarea>
+                <div class="field-box field-box-message">
+                    <textarea id="message" formControlName="message" placeholder=" "></textarea>
+                    <label for="message">{{ 'contact.message' | translate }}</label>
+                    @if (message?.touched && message?.invalid) {
+                        <img class="error-icon" src="/icons/error_icon.svg" alt="" />
+                    }
+                </div>
                 <p class="error">
                     @if (message?.touched && message?.hasError('required')) {
                         {{ 'contact.errors.messageRequired' | translate }}
@@ -59,13 +73,18 @@
                 </p>
             </div>
             <label class="privacy">
-                <input type="checkbox" formControlName="privacy" />
+                <input type="checkbox" formControlName="privacy" (change)="privacy?.markAsTouched()" />
                 <span>
                     {{ 'contact.privacyBefore' | translate }}
                     <a routerLink="/privacy-policy">{{ 'contact.privacyLink' | translate }}</a>
                     {{ 'contact.privacyAfter' | translate }}
                 </span>
             </label>
+            <p class="error privacy-error">
+                @if (privacy?.touched && privacy?.invalid) {
+                    {{ 'contact.errors.privacyRequired' | translate }}
+                }
+            </p>
             <button
                 class="button"
                 type="submit"

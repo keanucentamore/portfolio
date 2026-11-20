@@ -53,14 +53,24 @@
     width: 618px;
 }
 
+/* Feld, Feldname und Fehler-Icon liegen übereinander in derselben Grid-Zelle (wie beim Hero-Foto) */
+.field-box {
+    display: grid;
+}
+
+.field-box > * {
+    grid-area: 1 / 1;
+}
+
 .contact-form input[type='text'],
 .contact-form input[type='email'],
 .contact-form textarea {
     width: 100%;
     height: 51px;
-    padding: 0 23px;
+    padding: 0 50px 0 23px;
     border: 1px solid var(--primary);
     border-radius: 10px;
+    outline: none;
     background-color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -73,8 +83,60 @@
     resize: vertical;
 }
 
-.contact-form .field .invalid {
-    border-color: var(--error);
+/* Hover und Fokus laut Prototyp: kräftigerer Rahmen, ohne dass sich etwas verschiebt */
+.contact-form input[type='text']:hover,
+.contact-form input[type='email']:hover,
+.contact-form textarea:hover,
+.contact-form input[type='text']:focus,
+.contact-form input[type='email']:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+/* Feldname: steht im Feld, solange es leer ist und keinen Fokus hat */
+.field-box label {
+    align-self: center;
+    justify-self: start;
+    margin-left: 20px;
+    padding: 0 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    pointer-events: none;
+    transition: transform 125ms ease-in-out;
+}
+
+.field-box-message label {
+    align-self: start;
+    margin-top: 15px;
+}
+
+/* Mit Fokus oder Inhalt wandert der Feldname auf den oberen Rahmen.
+   :placeholder-shown ist nicht aus dem Kurs: das Feld hat den Platzhalter " ", der verschwindet, sobald etwas drinsteht.
+   Der Verlauf deckt nur die untere Hälfte ab, so unterbricht der Name die Rahmenlinie wie im Prototyp. */
+.field-box input:focus + label,
+.field-box input:not(:placeholder-shown) + label,
+.field-box textarea:focus + label,
+.field-box textarea:not(:placeholder-shown) + label {
+    align-self: start;
+    margin-top: 0;
+    background: linear-gradient(transparent 50%, var(--white) 50%);
+    transform: translateY(-50%);
+}
+
+.error-icon {
+    align-self: center;
+    justify-self: end;
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    pointer-events: none;
+}
+
+.field-box-message .error-icon {
+    align-self: start;
+    margin-top: 14px;
 }
 
 /* Fehlerzeile hat immer ihre Höhe, auch leer: so verschiebt eine Meldung nichts */
@@ -88,15 +150,10 @@
     color: var(--error);
 }
 
-.contact-form ::placeholder {
-    color: #000000;
-}
-
 .privacy {
     display: flex;
     align-items: flex-start;
     gap: 13px;
-    margin-top: -17px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -104,12 +161,33 @@
     cursor: pointer;
 }
 
+/* Eigene Checkbox wie im Prototyp. appearance: none ist nicht aus dem Kurs: es blendet die Browser-Checkbox aus */
 .privacy input {
     flex-shrink: 0;
     width: 18px;
     height: 18px;
     margin-top: 1px;
-    accent-color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    background-color: var(--white);
+    background-position: center;
+    background-repeat: no-repeat;
+    appearance: none;
+    cursor: pointer;
+}
+
+.privacy input:hover {
+    background-color: #c2d5ff;
+}
+
+.privacy input:checked {
+    background-image: url('/icons/checkbox_check.svg');
+}
+
+/* Der Hinweis zur Checkbox nutzt den freien Platz über dem Button, der Button bleibt an seiner Stelle */
+.privacy-error {
+    margin: -6px 0 -22px;
+    padding-left: 0;
 }
 
 .privacy a {
@@ -139,7 +217,7 @@
     align-items: center;
     width: 39px;
     height: 39px;
-    margin: -25px 0 0 8px;
+    margin: -38px 0 0 8px;
     background-image: url('/icons/bubble_blue_icon.svg');
     background-size: cover;
     border-radius: 50%;
@@ -266,8 +344,9 @@
         margin-top: 0;
     }
 
-    .privacy {
-        margin-top: -11px;
+    /* Der Hinweistext läuft hier dreizeilig, deshalb bekommt die Fehlerzeile ihren eigenen Platz */
+    .privacy-error {
+        margin-bottom: 0;
     }
 
     .contact-form .button {
