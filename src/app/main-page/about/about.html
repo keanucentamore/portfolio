@@ -22,8 +22,38 @@
         </div>
     </div>
     <div class="about-right">
-        <p>{{ 'about.text1' | translate }}</p>
-        <p>{{ 'about.text2' | translate }}</p>
-        <a class="button" href="#contact">{{ 'about.button' | translate }}</a>
+        <!-- Alle Texte liegen übereinander, sichtbar ist nur der aktive: so ist die Box so hoch wie der längste Text und nichts springt -->
+        <div class="slides">
+            @for (slide of slides; track slide; let i = $index) {
+                <p class="slide" [class.active]="i === currentSlide()" [attr.aria-hidden]="i !== currentSlide()">
+                    {{ slide | translate }}
+                </p>
+            }
+        </div>
+        <!-- Slider-Steuerung und Button: am Desktop nebeneinander, auf Mobile untereinander -->
+        <div class="about-actions">
+            <div class="slider-controls">
+                <button class="slider-arrow" (click)="previousSlide()" [attr.aria-label]="'about.previous' | translate">
+                    <img src="/icons/arrow_back.svg" alt="" />
+                </button>
+                @for (slide of slides; track slide; let i = $index) {
+                    <button
+                        class="slider-dot"
+                        [class.active]="i === currentSlide()"
+                        (click)="showSlide(i)"
+                        [attr.aria-label]="('about.slide' | translate) + ' ' + (i + 1)"
+                        [attr.aria-current]="i === currentSlide()"
+                    ></button>
+                }
+                <button
+                    class="slider-arrow slider-arrow-next"
+                    (click)="nextSlide()"
+                    [attr.aria-label]="'about.next' | translate"
+                >
+                    <img src="/icons/arrow_back.svg" alt="" />
+                </button>
+            </div>
+            <a class="button" href="#contact">{{ 'about.button' | translate }}</a>
+        </div>
     </div>
 </section>

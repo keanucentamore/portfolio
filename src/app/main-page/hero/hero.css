@@ -56,6 +56,13 @@
     line-height: 107px;
 }
 
+/* „ENTWICKLER“ ist breiter als „DEVELOPER“: auf Deutsch etwas kleiner, damit das Wort in die Spalte passt.
+   :lang(de) greift über das lang-Attribut der Seite, das der Sprachumschalter setzt */
+.hero-text h1:lang(de) {
+    font-size: 106px;
+    line-height: 89px;
+}
+
 /* Scroll-Hinweis und Social-Links sitzen unten rechts, margin-top: auto schiebt sie an den unteren Rand */
 .hero-bottom {
     display: flex;
@@ -144,6 +151,11 @@
         line-height: 7.43vw;
     }
 
+    .hero-text h1:lang(de) {
+        font-size: 7.36vw;
+        line-height: 6.18vw;
+    }
+
     .hero-bottom {
         padding-right: 6.94vw;
     }
@@ -191,6 +203,11 @@
         line-height: 62px;
     }
 
+    .hero-text h1:lang(de) {
+        font-size: 59px;
+        line-height: 57px;
+    }
+
     .scroll,
     .social {
         display: none;
@@ -219,6 +236,11 @@
         width: 300px;
         font-size: 56px;
         line-height: 54px;
+    }
+
+    .hero-text h1:lang(de) {
+        font-size: 51px;
+        line-height: 49px;
     }
 }
 

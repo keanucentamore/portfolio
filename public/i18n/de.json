@@ -9,23 +9,27 @@
         "closeMenu": "Menü schließen"
     },
     "hero": {
-        "hello": "Hallo! Ich bin Sofia",
-        "title": "FRONTEND ENTWICKLERIN",
+        "hello": "Hallo! Ich bin Keanu",
+        "title": "FRONTEND-ENTWICKLER",
         "scroll": "SCROLLEN",
         "scrollDown": "Nach unten →"
     },
     "about": {
         "title": "Lass uns zusammen­arbeiten",
-        "text1": "Schreibe hier etwas über dich, das mit IT zu tun hat. Warum programmierst du gern? Was inspiriert dich, deine Fähigkeiten weiter auszubauen? Zeige, dass du Lust hast, neue Technologien zu lernen.",
-        "text2": "Beschreibe, wie du an Probleme herangehst. Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden? Du kannst Eigenschaften nennen wie analytisches Denken, Kreativität, Ausdauer und Teamarbeit.",
+        "text1": "Ich bin Frontend-Entwickler in Weiterbildung mit Fokus auf JavaScript, TypeScript und Angular. Mich treibt der Moment an, in dem aus einer Idee etwas wird, das Menschen tatsächlich nutzen. Das habe ich selbst erlebt: In einem vierköpfigen Softwareteam arbeite ich an BSTAGE, einer Plattform, die Künstler, Agenturen und Veranstalter verbindet. Außerdem habe ich ein Alarmsystem für den Club entwickelt, den ich mitführe, das unzuverlässige Funkgeräte in einer lauten Umgebung ersetzt. Meine Fähigkeiten verbessere ich, indem ich baue, mir anschaue, wie andere Probleme lösen, und neugierig auf neue Werkzeuge bleibe. Dazu gehört auch KI, die ich täglich nutze, um schneller zu prototypen, schneller zu lernen und meine eigenen Lösungen zu hinterfragen. Ich lerne gern neue Technologien und möchte dieses Wissen in sauberen, wartbaren Code umsetzen.",
+        "text2": "Wenn ich vor einem Problem stehe, versuche ich zuerst, es richtig zu verstehen: Was ist das eigentliche Ziel, wer nutzt es, und wo hakt es? Von dort aus denke ich analytisch, zerlege es in kleine Teile und überprüfe meine Annahmen. Ich bleibe hartnäckig, wenn die erste Lösung nicht funktioniert, und kreativ, wenn der naheliegende Weg in eine Sackgasse führt. Nach jeder Herausforderung frage ich mich, ob es eine einfachere oder elegantere Lösung gibt, und nehme diese Erkenntnis ins nächste Projekt mit. Genauso wichtig ist mir die Zusammenarbeit: Im Team arbeite ich am besten, denn Ideen zu diskutieren und Feedback zu geben und anzunehmen führt zu besseren Ergebnissen als allein zu arbeiten.",
         "button": "Nachricht senden",
         "iAm": "Ich bin",
-        "location1": "wohnhaft in",
-        "location2": "München",
+        "location1": "wohnhaft nahe",
+        "location2": "Dortmund",
         "remote1": "offen für",
         "remote2": "Remote-Arbeit",
         "relocate1": "bereit",
-        "relocate2": "umzuziehen"
+        "relocate2": "umzuziehen",
+        "text3": "Neben der Technik bringe ich Erfahrung aus der Unternehmensführung mit. Als stellvertretender Geschäftsführer habe ich ein Eventunternehmen mit aufgebaut, führe Mitarbeiter und kenne mich in Buchhaltung und betriebswirtschaftlichem Alltag aus. Das hilft mir, Software nicht nur technisch, sondern auch aus Sicht von Nutzern, Budget und Team zu denken. Dazu kommt meine kreative Seite: Ich gestalte Branding, Visuals und Videoinhalte, arbeite sicher mit der Adobe Creative Cloud und setze KI-Tools gezielt ein, um Ideen schnell sichtbar zu machen. Genau diese Mischung aus Technik, Gestaltung und unternehmerischem Denken möchte ich in ein Entwicklerteam einbringen.",
+        "previous": "Vorheriger Text",
+        "next": "Nächster Text",
+        "slide": "Text anzeigen"
     },
     "skills": {
         "title": "Skills"
@@ -39,7 +43,7 @@
     },
     "myWork": {
         "title": "Meine Projekte",
-        "intro": "Hier findest du eine Auswahl meiner Arbeiten – probiere die Projekte aus und sieh meine Fähigkeiten in Aktion."
+        "intro": "Hier findest du einige meiner neuesten Projekte aus meiner Weiterbildung zum Frontend-Entwickler – probier die Demos aus und sieh dir meine Fähigkeiten live an!"
     },
     "references": {
         "title": "Teamplayer gesucht?",
@@ -52,7 +56,7 @@
     "contact": {
         "title": "Kontakt",
         "problem": "Ein Problem zu lösen?",
-        "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige, dass du mit deiner Arbeit ihre Projekte bereicherst.",
+        "text": "Ich suche eine Stelle als Junior-Frontend-Entwickler, in der ich im Team weiter wachsen und Produkte mitbauen kann, die Menschen wirklich nutzen. Wenn du jemanden suchst, der Code, Nutzer und Gestaltung zusammen denkt, freue ich mich auf deine Nachricht.",
         "need": "Du suchst einen Frontend-Entwickler?",
         "contactMe": "Schreib mir!",
         "name": "Dein Name",

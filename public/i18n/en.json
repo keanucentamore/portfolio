@@ -9,23 +9,27 @@
         "closeMenu": "Close menu"
     },
     "hero": {
-        "hello": "Hello! I am Sofia",
+        "hello": "Hello! I am Keanu",
         "title": "FRONTEND DEVELOPER",
         "scroll": "SCROLL",
         "scrollDown": "Scroll down →"
     },
     "about": {
         "title": "Let's work together",
-        "text1": "Write some information about yourself that is IT related. Why are you passionate about programming? What is your source of inspiration for improving your coding skills? Show a desire to learn new technologies.",
-        "text2": "Describe your approach to problem solving. Do you learn from each challenge to find the most efficient or elegant solution? You can include some key attributes such as: analytical thinking, creativity, persistence and collaboration.",
+        "text1": "I’m a frontend developer in training, currently focusing on JavaScript, TypeScript and Angular. What drives me is the moment an idea turns into something people actually use. I’ve experienced that firsthand: in a four-person software team I’ve worked on BSTAGE, a platform that connects artists, agencies and event organizers, and I built a staff alert system for the club I help run, replacing unreliable walkie-talkies in a loud environment. I improve my skills by building, by looking at how others solve problems, and by staying curious about new tools. That includes AI, which I use daily to prototype faster, learn faster and question my own solutions. I’m eager to keep learning new technologies and to turn that knowledge into clean, maintainable code.",
+        "text2": "When I face a problem, I start by understanding it properly: What is the actual goal, who uses it, and where does it break? From there I think analytically, break it into small parts and test my assumptions. I stay persistent when the first solution doesn’t work, and I stay creative when the obvious route is a dead end. After each challenge I ask myself whether there is a simpler or more elegant way, and I carry that lesson into the next project. Just as important to me is collaboration: I work best in a team, where discussing ideas and giving and receiving feedback leads to better results than working alone.",
         "button": "Send a message",
         "iAm": "I am",
-        "location1": "located in",
-        "location2": "Munich",
+        "location1": "located near",
+        "location2": "Dortmund",
         "remote1": "open to work",
         "remote2": "remote",
         "relocate1": "open to",
-        "relocate2": "relocate"
+        "relocate2": "relocate",
+        "text3": "Beyond the technical side, I bring experience in business leadership. As deputy managing director, I helped build an event company, I lead employees, and I’m well versed in bookkeeping and day-to-day business operations. That helps me think about software not only technically, but also from the perspective of users, budget and team. On top of that comes my creative side: I design branding, visuals and video content, I’m proficient in the Adobe Creative Cloud, and I use AI tools to make ideas visible quickly. This mix of technology, design and entrepreneurial thinking is what I want to bring to a development team.",
+        "previous": "Previous text",
+        "next": "Next text",
+        "slide": "Show text"
     },
     "skills": {
         "title": "Skill set"
@@ -39,7 +43,7 @@
     },
     "myWork": {
         "title": "My work",
-        "intro": "Explore a selection of my work here - Interact with projects to see my skills in action."
+        "intro": "Below you’ll find a few of my latest projects, built during my training as a frontend developer – interact with the demos to see some of my skills live!"
     },
     "references": {
         "title": "Need a teamplayer?",
@@ -52,7 +56,7 @@
     "contact": {
         "title": "Contact",
         "problem": "Got a problem to solve?",
-        "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+        "text": "I’m looking for a role as a junior frontend developer where I can keep growing in a team and help build products people actually use. If you need someone who thinks about code, users and design together, I’d love to hear from you.",
         "need": "Need a Frontend developer?",
         "contactMe": "Contact me!",
         "name": "Your name",

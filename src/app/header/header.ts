@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageSwitch } from '../language-switch/language-switch';
@@ -10,7 +10,6 @@ import { LanguageSwitch } from '../language-switch/language-switch';
     styleUrl: './header.css',
 })
 export class Header {
-    whiteLogo = input(false);
     menuOpen = signal(false);
 
     /**

@@ -23,7 +23,10 @@
     color: #000000;
 }
 
+/* Rahmen für die Kreise hinter den Projekten: sie stehen relativ zur Liste und bleiben hinter ihren Bildern,
+   egal wie lang der Einleitungstext ist */
 .project-list {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 137px;
@@ -31,11 +34,11 @@
 }
 
 /* Zeilen mit Bild rechts beginnen weiter rechts, damit das Bild bei x 694 steht */
-.project-list app-project-item:nth-child(even) {
+.project-list app-project-item:nth-of-type(even) {
     margin-left: 21px;
 }
 
-/* Bubbles: Position und Größe aus der Vorlage (1440 px) */
+/* Bubbles: Position und Größe aus der Vorlage (1440 px); 1 und 2 relativ zur Section, 3 bis 7 relativ zur Projektliste */
 .bubble-1 {
     top: 66px;
     left: 540px;
@@ -51,36 +54,36 @@
 }
 
 .bubble-3 {
-    top: 584px;
-    left: -211px;
+    top: 212px;
+    left: -288px;
     width: 384px;
     height: 384px;
 }
 
 .bubble-4 {
-    top: 877px;
-    left: 935px;
+    top: 505px;
+    left: 858px;
     width: 653px;
     height: 653px;
 }
 
 .bubble-5 {
-    top: 1282px;
-    left: 77px;
+    top: 910px;
+    left: 0px;
     width: 51px;
     height: 51px;
 }
 
 .bubble-6 {
-    top: 1738px;
-    left: 124px;
+    top: 1366px;
+    left: 47px;
     width: 237px;
     height: 237px;
 }
 
 .bubble-7 {
-    top: 2114px;
-    left: 1278px;
+    top: 1742px;
+    left: 1201px;
     width: 97px;
     height: 97px;
 }
@@ -108,7 +111,7 @@
         margin-top: 2.85vw;
     }
 
-    .project-list app-project-item:nth-child(even) {
+    .project-list app-project-item:nth-of-type(even) {
         margin-left: 1.46vw;
     }
 
@@ -127,36 +130,36 @@
     }
 
     .bubble-3 {
-        top: 40.56vw;
-        left: -14.65vw;
+        top: 14.72vw;
+        left: -20vw;
         width: 26.67vw;
         height: 26.67vw;
     }
 
     .bubble-4 {
-        top: 60.9vw;
-        left: 64.93vw;
+        top: 35.07vw;
+        left: 59.58vw;
         width: 45.35vw;
         height: 45.35vw;
     }
 
     .bubble-5 {
-        top: 89.03vw;
-        left: 5.35vw;
+        top: 63.19vw;
+        left: 0vw;
         width: 3.54vw;
         height: 3.54vw;
     }
 
     .bubble-6 {
-        top: 120.69vw;
-        left: 8.61vw;
+        top: 94.86vw;
+        left: 3.26vw;
         width: 16.46vw;
         height: 16.46vw;
     }
 
     .bubble-7 {
-        top: 146.81vw;
-        left: 88.75vw;
+        top: 120.97vw;
+        left: 83.4vw;
         width: 6.74vw;
         height: 6.74vw;
     }
@@ -184,7 +187,7 @@
         margin-top: 66px;
     }
 
-    .project-list app-project-item:nth-child(even) {
+    .project-list app-project-item:nth-of-type(even) {
         margin-left: 0;
     }
 
@@ -196,30 +199,30 @@
     }
 
     .bubble-6 {
-        top: 1669px;
-        left: 8px;
+        top: 1328px;
+        left: -17px;
         width: 140px;
         height: 140px;
     }
 
     .bubble-3 {
-        top: 421px;
-        left: -120px;
+        top: 80px;
+        left: -145px;
         width: 222px;
         height: 222px;
     }
 
     .bubble-4 {
-        top: 1036px;
-        right: -94px;
+        top: 695px;
+        right: -119px;
         left: auto;
         width: 269px;
         height: 269px;
     }
 
     .bubble-7 {
-        top: 2596px;
-        right: -15px;
+        top: 2255px;
+        right: -40px;
         left: auto;
         width: 36px;
         height: 36px;
@@ -252,17 +255,5 @@
     .bubble-4 {
         right: -148px;
         left: auto;
-    }
-
-    .bubble-5 {
-        left: calc(50% - 643px);
-    }
-
-    .bubble-6 {
-        left: calc(50% - 596px);
-    }
-
-    .bubble-7 {
-        left: calc(50% + 558px);
     }
 }

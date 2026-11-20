@@ -3,8 +3,9 @@
     z-index: 0;
     overflow: hidden;
     display: flex;
-    padding: 130px 0 0 100px;
-    height: 673px;
+    /* Mindesthöhe statt fester Höhe: längere Texte (z. B. auf Deutsch) machen die Section höher statt abgeschnitten zu werden */
+    padding: 130px 0 44px 100px;
+    min-height: 673px;
 }
 
 .about-left {
@@ -88,20 +89,89 @@
 
 .about-right p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     color: #000000;
 }
 
-.about-right p + p {
-    margin-top: 28px;
+/* Slider: alle Texte in derselben Grid-Zelle übereinander, nur der aktive ist sichtbar.
+   Die Zelle ist so hoch wie der längste Text, beim Wechseln verschiebt sich nichts. */
+.slides {
+    display: grid;
+}
+
+.slide {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.about-actions {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-top: 32px;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.slider-arrow {
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 125ms ease-in-out;
+}
+
+.slider-arrow img {
+    display: block;
+    width: 39px;
+    height: 39px;
+}
+
+/* Derselbe Pfeil wie auf den rechtlichen Seiten, für „weiter“ gespiegelt */
+.slider-arrow-next img {
+    transform: scaleX(-1);
+}
+
+.slider-arrow:hover,
+.slider-arrow:focus-visible {
+    transform: scale(1.1);
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.slider-dot:hover {
+    background-color: #c2d5ff;
+}
+
+.slider-dot.active {
+    background-color: var(--primary);
 }
 
 .button {
     width: 254px;
     height: 58px;
-    margin-top: 40px;
     font-size: 23px;
 }
 
@@ -144,8 +214,8 @@
 /* Tablet bis 1439 px: wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px). Die Texte der Merkmale bleiben fest, sonst fielen sie unter 16px */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .about {
-        height: 46.74vw;
-        padding: 9.03vw 0 0 6.94vw;
+        min-height: 46.74vw;
+        padding: 9.03vw 0 3.06vw 6.94vw;
     }
 
     .about-left {
@@ -187,19 +257,19 @@
         margin-top: 0.63vw;
     }
 
+    /* Fließtext fest auf 16px, kleiner darf er nicht werden */
     .about-right p {
-        font-size: 1.6vw;
-        line-height: 1.94vw;
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    .about-right p + p {
-        margin-top: 1.94vw;
+    .about-actions {
+        gap: 3.33vw;
     }
 
     .button {
         width: 17.64vw;
         height: 4.03vw;
-        margin-top: 2.78vw;
         font-size: 1.6vw;
     }
 
@@ -221,7 +291,7 @@
 @media (max-width: 1023px) {
     .about {
         flex-direction: column;
-        height: auto;
+        min-height: 0;
         padding: 0 0 139px;
     }
 
@@ -299,11 +369,20 @@
         padding: 0 30px 0 26px;
     }
 
+    .about-right p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about-actions {
+        flex-direction: column;
+        gap: 40px;
+    }
+
     .button {
         display: flex;
         width: 242px;
         height: 54px;
-        margin: 40px auto 0;
     }
 
     /* Auf Mobile: halber Kreis unter dem Hero und ein kleiner Kreis rechts */
