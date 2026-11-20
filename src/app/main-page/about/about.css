@@ -1,4 +1,7 @@
 .about {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
     display: flex;
     padding: 130px 0 0 100px;
     height: 673px;
@@ -102,6 +105,21 @@
     font-size: 23px;
 }
 
+/* Bubbles: Position und Größe aus der Vorlage (1440 px) */
+.bubble-big {
+    top: -103px;
+    left: 628px;
+    width: 206px;
+    height: 206px;
+}
+
+.bubble-small {
+    top: 32px;
+    left: 1034px;
+    width: 82px;
+    height: 82px;
+}
+
 @media (max-width: 1023px) {
     .about {
         flex-direction: column;
@@ -188,5 +206,17 @@
         width: 242px;
         height: 54px;
         margin: 40px auto 0;
+    }
+
+    /* Auf Mobile zeigt die Vorlage nur einen kleinen Kreis */
+    .bubble-big {
+        display: none;
+    }
+
+    .bubble-small {
+        top: 42px;
+        left: 308px;
+        width: 61px;
+        height: 61px;
     }
 }

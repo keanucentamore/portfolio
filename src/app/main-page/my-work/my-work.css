@@ -1,4 +1,7 @@
 .my-work {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
     padding: 132px 0 142px 77px;
 }
 
@@ -32,6 +35,56 @@
     margin-left: 21px;
 }
 
+/* Bubbles: Position und Größe aus der Vorlage (1440 px) */
+.bubble-1 {
+    top: 66px;
+    left: 540px;
+    width: 108px;
+    height: 108px;
+}
+
+.bubble-2 {
+    top: 186px;
+    left: 1134px;
+    width: 183px;
+    height: 183px;
+}
+
+.bubble-3 {
+    top: 584px;
+    left: -211px;
+    width: 384px;
+    height: 384px;
+}
+
+.bubble-4 {
+    top: 877px;
+    left: 935px;
+    width: 653px;
+    height: 653px;
+}
+
+.bubble-5 {
+    top: 1282px;
+    left: 77px;
+    width: 51px;
+    height: 51px;
+}
+
+.bubble-6 {
+    top: 1738px;
+    left: 124px;
+    width: 237px;
+    height: 237px;
+}
+
+.bubble-7 {
+    top: 2114px;
+    left: 1278px;
+    width: 97px;
+    height: 97px;
+}
+
 @media (max-width: 1023px) {
     .my-work {
         padding: 140px 25px 167px;
@@ -56,5 +109,22 @@
 
     .project-list app-project-item:nth-child(even) {
         margin-left: 0;
+    }
+
+    /* Auf Mobile zeigt die Vorlage nur einen kleinen Kreis */
+    .bubble-2,
+    .bubble-3,
+    .bubble-4,
+    .bubble-5,
+    .bubble-6,
+    .bubble-7 {
+        display: none;
+    }
+
+    .bubble-1 {
+        top: 68px;
+        left: 304px;
+        width: 45px;
+        height: 45px;
     }
 }
