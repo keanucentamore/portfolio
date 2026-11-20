@@ -1,4 +1,7 @@
 .contact {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
     height: 940px;
     padding: 141px 0 0 92px;
     background: linear-gradient(var(--white), var(--light-blue));
@@ -179,6 +182,28 @@
     font-size: 16px;
 }
 
+/* Bubbles: Position und Größe aus der Vorlage (1440 px) */
+.bubble-1 {
+    top: 41px;
+    left: 811px;
+    width: 130px;
+    height: 130px;
+}
+
+.bubble-2 {
+    top: 547px;
+    left: 242px;
+    width: 204px;
+    height: 204px;
+}
+
+.bubble-3 {
+    top: 798px;
+    left: 1276px;
+    width: 73px;
+    height: 73px;
+}
+
 @media (max-width: 1023px) {
     .contact {
         height: auto;
@@ -239,5 +264,18 @@
 
     .to-top {
         margin: 58px 0 0 -1px;
+    }
+
+    /* Auf Mobile zeigt die Vorlage nur einen Kreis */
+    .bubble-2,
+    .bubble-3 {
+        display: none;
+    }
+
+    .bubble-1 {
+        top: 44px;
+        left: 237px;
+        width: 70px;
+        height: 70px;
     }
 }

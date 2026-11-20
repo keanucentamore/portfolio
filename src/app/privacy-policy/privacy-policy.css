@@ -1,3 +1,11 @@
+/* Die ganze Seite ist der Rahmen für die Bubbles; overflow: hidden schneidet sie am Rand ab */
+:host {
+    display: block;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
 .privacy {
     max-width: 1240px;
     padding: 115px 0 66px 200px;
@@ -35,6 +43,14 @@
     margin-top: 33px;
 }
 
+/* Bubbles: Position und Größe aus der Vorlage (1440 px) */
+.bubble-1 {
+    top: 253px;
+    left: 1330px;
+    width: 92px;
+    height: 92px;
+}
+
 @media (max-width: 1023px) {
     .privacy {
         padding: 19px 17px 47px 25px;
@@ -54,5 +70,10 @@
 
     .privacy h1 + h2 {
         margin-top: 32px;
+    }
+
+    /* Die mobile Vorlage zeigt hier keine Bubbles */
+    .bubble {
+        display: none;
     }
 }
