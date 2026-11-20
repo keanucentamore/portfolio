@@ -1,59 +1,72 @@
-# Portfolio
+# Portfolio – Keanu Centamore
 
-This project was setted up using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.30.
+My personal portfolio website as a frontend developer, built with Angular. It introduces me, my skills and my projects and lets visitors contact me directly.
 
-## Development server
+Created as part of the frontend course at Developer Akademie, based on the course's Figma template.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
+- **Two languages:** German and English, switchable in the header and in the mobile menu; page title and `lang` attribute switch along
+- **Hero** at full screen height with photo, scroll hint and social links
+- **About me** with a text slider (arrows and dots) for the full introduction
+- **Skill set** as fixed tiles, three per row on mobile
+- **My work:** projects with preview image, technologies, description, live test and GitHub link
+- **References** from people I have worked with
+- **Contact form** with Reactive Forms:
+  - validation when leaving a field, error messages without layout shift
+  - field names move onto the border on focus, error icon in invalid fields
+  - submit only possible when everything is valid and the privacy checkbox is ticked
+  - feedback after sending
+- **Legal notice and privacy policy** as separate pages, linked in the footer
+- **Hover states and keyboard focus** for all links, buttons and icons
+- **Responsive** from 320 px to wide screens: own layouts for mobile, tablet (1024–1439 px) and desktop; on very wide screens the content stays centered
+
+## Built with
+
+- Angular 21 with standalone components and signals
+- TypeScript
+- Reactive Forms for the contact form
+- [ngx-translate](https://github.com/ngx-translate/core) for German and English
+- Angular Router with anchor scrolling, so the header links jump to the sections from every page
+- Plain CSS with CSS variables, Flexbox and Grid
+- Fonts (Baloo 2, Montserrat, Open Sans) included locally, no connection to Google Fonts
+
+## Project structure
+
+```
+src/
+  app/
+    header/            logo, navigation, language switch, mobile menu
+    language-switch/   DE / EN buttons
+    main-page/         hero, about, skills, my-work (with project-item), references, contact
+    footer/            logo, copyright, social links, legal links
+    legal-notice/      legal notice page
+    privacy-policy/    privacy policy page
+    services/          project data
+    interfaces/        Project interface
+  styles.css           colors, reset, shared button and bubble styles
+public/
+  i18n/                en.json and de.json with all texts
+  icons/, images/, fonts/
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Run locally
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Then open `http://localhost:4200/` in the browser.
+
+To build for production:
 
 ```bash
-ng generate --help
+npm run build
 ```
 
-## Building
+The finished files are in `dist/portfolio/browser`.
 
-To build the project run:
+## Contact form
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The form sends its data as JSON to `/api/contact`. That endpoint runs on the server at the hosting provider and forwards the message by email; it is not part of the local development server, so sending only works on the live site.
