@@ -122,3 +122,10 @@ nav a:hover {
         display: block;
     }
 }
+
+/* Breite Bildschirme ab 1441 px: die 1440er Vorlage steht mittig, Hintergründe bleiben über die volle Breite */
+@media (min-width: 1441px) {
+    header {
+        padding: 24px calc(50% - 642px) 0 calc(50% - 643px);
+    }
+}

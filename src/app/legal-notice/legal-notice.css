@@ -125,3 +125,16 @@
         display: none;
     }
 }
+
+/* Breite Bildschirme ab 1441 px: Text steht in der mittigen 1440er Fläche, der angeschnittene Kreis links bleibt am Rand */
+@media (min-width: 1441px) {
+    .legal {
+        max-width: none;
+        padding-left: calc(50% - 520px);
+        padding-right: calc(50% - 450px);
+    }
+
+    .bubble-1 {
+        left: calc(50% + 516px);
+    }
+}

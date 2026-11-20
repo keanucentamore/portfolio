@@ -160,3 +160,30 @@
         width: 142px;
     }
 }
+
+/* Sehr schmale Geräte unter 390 px: Bild und Text 270 px breit, Buttons etwas schmaler */
+@media (max-width: 389px) {
+    .project,
+    .project.reversed,
+    .project-text,
+    .project.reversed .project-text {
+        width: 270px;
+    }
+
+    .project img {
+        width: 270px;
+        height: 171px;
+    }
+
+    .project-links {
+        gap: 16px;
+    }
+
+    .project-links .button {
+        width: 110px;
+    }
+
+    .project-links .button-filled {
+        width: 124px;
+    }
+}

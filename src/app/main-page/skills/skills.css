@@ -97,3 +97,14 @@
         margin-top: 12px;
     }
 }
+
+/* Sehr schmale Geräte unter 390 px: schmalere feste Kacheln, weiter drei pro Reihe */
+@media (max-width: 389px) {
+    .skill-list {
+        width: 300px;
+    }
+
+    .skill {
+        width: 100px;
+    }
+}

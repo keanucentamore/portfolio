@@ -211,3 +211,31 @@
         text-decoration: none;
     }
 }
+
+/* Sehr schmale Geräte unter 390 px (z. B. 320 px): Überschrift etwas kleiner, damit „DEVELOPER“ ganz zu sehen ist */
+@media (max-width: 389px) {
+    .hero-text h1 {
+        width: 300px;
+        font-size: 56px;
+        line-height: 54px;
+    }
+}
+
+/* Breite Bildschirme ab 1441 px: Foto, Kreis und Text stehen in der mittigen 1440er Fläche, der Verlauf bleibt über die volle Breite */
+@media (min-width: 1441px) {
+    .hero-photo {
+        margin-left: calc(50% - 689px);
+    }
+
+    .hero-circle {
+        margin-left: calc(50% - 919px);
+    }
+
+    .hero-text {
+        padding-left: calc(50% + 11px);
+    }
+
+    .hero-bottom {
+        padding-right: calc(50% - 620px);
+    }
+}

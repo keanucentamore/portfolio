@@ -207,3 +207,35 @@
         height: 45px;
     }
 }
+
+/* Breite Bildschirme ab 1441 px: Inhalt mittig; die angeschnittenen Kreise links (3) und rechts (4) bleiben am Bildschirmrand */
+@media (min-width: 1441px) {
+    .my-work {
+        padding-left: calc(50% - 643px);
+    }
+
+    .bubble-1 {
+        left: calc(50% - 180px);
+    }
+
+    .bubble-2 {
+        left: calc(50% + 414px);
+    }
+
+    .bubble-4 {
+        right: -148px;
+        left: auto;
+    }
+
+    .bubble-5 {
+        left: calc(50% - 643px);
+    }
+
+    .bubble-6 {
+        left: calc(50% - 596px);
+    }
+
+    .bubble-7 {
+        left: calc(50% + 558px);
+    }
+}

@@ -417,3 +417,22 @@
         height: 70px;
     }
 }
+
+/* Breite Bildschirme ab 1441 px: die 1440er Vorlage steht mittig, Hintergründe bleiben über die volle Breite */
+@media (min-width: 1441px) {
+    .contact {
+        padding-left: calc(50% - 628px);
+    }
+
+    .bubble-1 {
+        left: calc(50% + 91px);
+    }
+
+    .bubble-2 {
+        left: calc(50% - 478px);
+    }
+
+    .bubble-3 {
+        left: calc(50% + 556px);
+    }
+}
