@@ -111,6 +111,47 @@
     display: none;
 }
 
+/* Tablet bis 1439 px: alles Große wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px).
+   Schriften unter 24px bleiben fest, damit nichts unter 16px fällt. */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-photo {
+        width: 52.85vw;
+        height: 63.68vw;
+        margin-left: 2.15vw;
+    }
+
+    .hero-circle {
+        width: 61.94vw;
+        height: 61.94vw;
+        margin: -5.28vw 0 0 -13.82vw;
+    }
+
+    .hero-text {
+        padding-left: 50.76vw;
+    }
+
+    .hero-text p {
+        margin-top: 8.61vw;
+        font-size: 4.44vw;
+        line-height: 5.42vw;
+    }
+
+    .hero-text h1 {
+        width: 43.06vw;
+        margin-top: 0.97vw;
+        font-size: 8.89vw;
+        line-height: 7.43vw;
+    }
+
+    .hero-bottom {
+        padding-right: 6.94vw;
+    }
+
+    .scroll {
+        margin-right: 15.69vw;
+    }
+}
+
 @media (max-width: 1023px) {
     /* Das Foto ist im Design unten und rechts vom Rand des Hero angeschnitten */
     .hero {
@@ -141,8 +182,9 @@
         line-height: 44px;
     }
 
+    /* Feste Breite: „DEVELOPER“ bricht wie im Design immer in die zweite Zeile, auch auf breiteren Geräten */
     .hero-text h1 {
-        width: auto;
+        width: 345px;
         margin-top: 7px;
         font-size: 64px;
         line-height: 62px;

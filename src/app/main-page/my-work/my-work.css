@@ -85,6 +85,83 @@
     height: 97px;
 }
 
+/* Tablet bis 1439 px: wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .my-work {
+        padding: 9.17vw 0 9.86vw 5.35vw;
+    }
+
+    .my-work h2 {
+        font-size: 6.67vw;
+        line-height: 7.64vw;
+    }
+
+    .intro {
+        width: 41.67vw;
+        margin-top: 2.29vw;
+        font-size: 1.6vw;
+        line-height: 1.94vw;
+    }
+
+    .project-list {
+        gap: 9.51vw;
+        margin-top: 2.85vw;
+    }
+
+    .project-list app-project-item:nth-child(even) {
+        margin-left: 1.46vw;
+    }
+
+    .bubble-1 {
+        top: 4.58vw;
+        left: 37.5vw;
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .bubble-2 {
+        top: 12.92vw;
+        left: 78.75vw;
+        width: 12.71vw;
+        height: 12.71vw;
+    }
+
+    .bubble-3 {
+        top: 40.56vw;
+        left: -14.65vw;
+        width: 26.67vw;
+        height: 26.67vw;
+    }
+
+    .bubble-4 {
+        top: 60.9vw;
+        left: 64.93vw;
+        width: 45.35vw;
+        height: 45.35vw;
+    }
+
+    .bubble-5 {
+        top: 89.03vw;
+        left: 5.35vw;
+        width: 3.54vw;
+        height: 3.54vw;
+    }
+
+    .bubble-6 {
+        top: 120.69vw;
+        left: 8.61vw;
+        width: 16.46vw;
+        height: 16.46vw;
+    }
+
+    .bubble-7 {
+        top: 146.81vw;
+        left: 88.75vw;
+        width: 6.74vw;
+        height: 6.74vw;
+    }
+}
+
 @media (max-width: 1023px) {
     .my-work {
         padding: 140px 25px 167px;
@@ -121,9 +198,11 @@
         display: none;
     }
 
+    /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */
     .bubble-1 {
         top: 68px;
-        left: 304px;
+        right: 41px;
+        left: auto;
         width: 45px;
         height: 45px;
     }

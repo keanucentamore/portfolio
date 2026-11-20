@@ -41,3 +41,11 @@ button.active {
     color: var(--primary);
     border-bottom-color: transparent;
 }
+
+/* Tablet bis 1439 px: wächst mit der Fensterbreite wie die Navigation */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .language-switch {
+        font-size: 1.6vw;
+        line-height: 1.94vw;
+    }
+}

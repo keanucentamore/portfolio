@@ -141,6 +141,83 @@
     height: 82px;
 }
 
+/* Tablet bis 1439 px: wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px). Die Texte der Merkmale bleiben fest, sonst fielen sie unter 16px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .about {
+        height: 46.74vw;
+        padding: 9.03vw 0 0 6.94vw;
+    }
+
+    .about-left {
+        width: 46.46vw;
+    }
+
+    .about-left h2 {
+        width: 41.67vw;
+        margin-top: 0.56vw;
+        font-size: 8.33vw;
+        line-height: 8.4vw;
+    }
+
+    .about-left h3 {
+        margin: 2.43vw 0 0 18.13vw;
+        font-size: 3.06vw;
+        line-height: 3.47vw;
+    }
+
+    .facts {
+        margin: 2.29vw 0 0 0.83vw;
+    }
+
+    .fact {
+        width: 14.03vw;
+    }
+
+    /* Der Laptop ist breiter als die anderen Icons, deshalb ein fester Mindestanteil */
+    .fact + .fact {
+        width: calc(10vw + 80px);
+    }
+
+    .fact:last-child {
+        width: auto;
+    }
+
+    .about-right {
+        width: 40.28vw;
+        margin-top: 0.63vw;
+    }
+
+    .about-right p {
+        font-size: 1.6vw;
+        line-height: 1.94vw;
+    }
+
+    .about-right p + p {
+        margin-top: 1.94vw;
+    }
+
+    .button {
+        width: 17.64vw;
+        height: 4.03vw;
+        margin-top: 2.78vw;
+        font-size: 1.6vw;
+    }
+
+    .bubble-big {
+        top: -7.15vw;
+        left: 43.61vw;
+        width: 14.31vw;
+        height: 14.31vw;
+    }
+
+    .bubble-small {
+        top: 2.22vw;
+        left: 71.81vw;
+        width: 5.69vw;
+        height: 5.69vw;
+    }
+}
+
 @media (max-width: 1023px) {
     .about {
         flex-direction: column;
@@ -234,9 +311,11 @@
         display: none;
     }
 
+    /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */
     .bubble-small {
         top: 42px;
-        left: 308px;
+        right: 21px;
+        left: auto;
         width: 61px;
         height: 61px;
     }

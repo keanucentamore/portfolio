@@ -54,6 +54,17 @@
     line-height: 20px;
 }
 
+/* Tablet bis 1439 px: feste, schmalere Kacheln, damit weiter sechs in eine Reihe passen */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .skill-list {
+        width: 900px;
+    }
+
+    .skill {
+        width: 150px;
+    }
+}
+
 @media (max-width: 1023px) {
     .skills {
         height: auto;

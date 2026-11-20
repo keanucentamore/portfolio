@@ -78,6 +78,44 @@
 }
 
 /* Mobil: Bild oben, Text darunter, alles mittig */
+/* Tablet bis 1439 px: Bild, Abstände und Überschriften wachsen mit der Fensterbreite (1vw = 14,4px); Beschreibung und Buttons bleiben fest, sonst fiele die Schrift unter 16px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .project {
+        gap: 6.18vw;
+        width: 84.65vw;
+    }
+
+    .project.reversed {
+        gap: 5.97vw;
+        width: 84.44vw;
+    }
+
+    .project img {
+        width: 43.06vw;
+        height: 27.29vw;
+    }
+
+    .project-text {
+        width: 35.42vw;
+        margin-top: 9.72vw;
+    }
+
+    .project-text h3 {
+        font-size: 3.06vw;
+        line-height: 2.78vw;
+    }
+
+    .technologies {
+        margin-top: 0.69vw;
+        font-size: 1.6vw;
+        line-height: 1.94vw;
+    }
+
+    .project-links {
+        margin-top: 2.43vw;
+    }
+}
+
 @media (max-width: 1023px) {
     .project,
     .project.reversed {

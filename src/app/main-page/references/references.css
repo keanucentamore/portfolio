@@ -55,6 +55,17 @@
     line-height: 22px;
 }
 
+/* Tablet bis 1439 px: etwas schmalere, feste Karten, damit alle drei nebeneinander passen */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .reference-list {
+        gap: 40px;
+    }
+
+    .reference {
+        width: 270px;
+    }
+}
+
 @media (max-width: 1023px) {
     .references {
         height: 421px;

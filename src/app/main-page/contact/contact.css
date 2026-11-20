@@ -296,6 +296,49 @@
     height: 73px;
 }
 
+/* Tablet bis 1439 px: Spalten und Überschriften wachsen mit der Fensterbreite (1vw = 14,4px), die Texte bleiben fest */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .contact {
+        padding: 141px 0 0 6.39vw;
+    }
+
+    .contact h2 {
+        font-size: 6.25vw;
+        line-height: 6.94vw;
+    }
+
+    .contact-content {
+        gap: 10.63vw;
+    }
+
+    .contact-text {
+        width: 32.64vw;
+    }
+
+    .contact-text h3 {
+        font-size: 2.22vw;
+        line-height: 2.71vw;
+    }
+
+    .contact-form {
+        width: 42.92vw;
+    }
+
+    .bubble-1 {
+        left: 56.32vw;
+    }
+
+    .bubble-2 {
+        left: 16.81vw;
+        width: 14.17vw;
+        height: 14.17vw;
+    }
+
+    .bubble-3 {
+        left: 88.61vw;
+    }
+}
+
 @media (max-width: 1023px) {
     .contact {
         height: auto;
@@ -365,9 +408,11 @@
         display: none;
     }
 
+    /* Abstand vom rechten Rand, damit der Kreis auch auf breiteren Geräten rechts bleibt */
     .bubble-1 {
         top: 44px;
-        left: 237px;
+        right: 83px;
+        left: auto;
         width: 70px;
         height: 70px;
     }

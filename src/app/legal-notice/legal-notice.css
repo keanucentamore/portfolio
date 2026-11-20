@@ -85,6 +85,24 @@
     height: 120px;
 }
 
+/* Tablet bis 1439 px: wächst mit der Fensterbreite, gemessen an 1440 px (1vw = 14,4px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .legal {
+        padding-left: 13.89vw;
+    }
+
+    .legal h1 {
+        font-size: 6.25vw;
+        line-height: 6.94vw;
+    }
+
+    .bubble-1 {
+        left: 85.83vw;
+        width: 11.74vw;
+        height: 11.74vw;
+    }
+}
+
 @media (max-width: 1023px) {
     .legal {
         padding: 19px 17px 69px 25px;
