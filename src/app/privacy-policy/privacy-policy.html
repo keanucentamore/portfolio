@@ -1,3 +1,31 @@
 <app-header />
-<p>privacy-policy works!</p>
+<main class="privacy">
+    <h1>{{ 'privacy.title' | translate }}</h1>
+
+    <h2>{{ 'privacy.controllerTitle' | translate }}</h2>
+    <p [innerHTML]="'privacy.controller' | translate"></p>
+
+    <h2>{{ 'privacy.hostingTitle' | translate }}</h2>
+    <p>{{ 'privacy.hosting' | translate }}</p>
+
+    <h2>{{ 'privacy.contactTitle' | translate }}</h2>
+    <p>{{ 'privacy.contact' | translate }}</p>
+
+    <h2>{{ 'privacy.fontsTitle' | translate }}</h2>
+    <p>{{ 'privacy.fonts' | translate }}</p>
+
+    <h2>{{ 'privacy.cookiesTitle' | translate }}</h2>
+    <p>{{ 'privacy.cookies' | translate }}</p>
+
+    <h2>{{ 'privacy.linksTitle' | translate }}</h2>
+    <p>{{ 'privacy.links' | translate }}</p>
+
+    <h2>{{ 'privacy.rightsTitle' | translate }}</h2>
+    <p>{{ 'privacy.rights' | translate }}</p>
+
+    <h2>{{ 'privacy.encryptionTitle' | translate }}</h2>
+    <p>{{ 'privacy.encryption' | translate }}</p>
+
+    <p class="date">{{ 'privacy.date' | translate }}</p>
+</main>
 <app-footer />

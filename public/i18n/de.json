@@ -95,5 +95,25 @@
         "indemnity": "Du stellst mich, die <span class=\"highlight\">Developer Akademie</span> sowie unsere Partner, Mitarbeitenden und Beauftragten von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten und Haftungen (einschließlich angemessener Anwaltskosten) frei, die aus deiner Nutzung von <span class=\"highlight\">Portfolio</span> oder einem Verstoß gegen dieses Impressum entstehen.",
         "questions": "Bei Fragen oder Hinweisen erreichst du mich unter contact@keanucentamore.de.",
         "date": "Stand: 20. November 2026"
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "controllerTitle": "Verantwortlicher",
+        "controller": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>Keanu Centamore, Recklinghauser Str. 275, 44581 Castrop-Rauxel<br>E-Mail: contact@keanucentamore.de",
+        "hostingTitle": "Hosting und Server-Logfiles",
+        "hosting": "Diese Website wird bei Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA, gehostet. Bei jedem Aufruf speichert der Server automatisch technische Daten, die dein Browser übermittelt: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene Seite, Browsertyp und -version, Betriebssystem und die zuvor besuchte Seite. Diese Daten sind nötig, um die Website sicher auszuliefern, und werden nach kurzer Zeit gelöscht. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse ist der sichere und fehlerfreie Betrieb der Website. Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert.",
+        "contactTitle": "Kontaktformular",
+        "contact": "Wenn du mir über das Kontaktformular schreibst, verarbeite ich deinen Namen, deine E-Mail-Adresse und deine Nachricht, um deine Anfrage zu beantworten. Die Daten werden über die Server von Cloudflare an mich übermittelt und nur für diesen Zweck genutzt. Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die du mit dem Häkchen erteilst. Du kannst sie jederzeit mit Wirkung für die Zukunft widerrufen. Ich lösche deine Daten, sobald deine Anfrage erledigt ist, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+        "fontsTitle": "Schriftarten",
+        "fonts": "Alle Schriftarten liegen auf diesem Server und werden von dort geladen. Eine Verbindung zu Google oder anderen Schriftanbietern wird nicht aufgebaut.",
+        "cookiesTitle": "Cookies und Tracking",
+        "cookies": "Diese Website verwendet keine Cookies, keine Analyse-Werkzeuge und kein Tracking.",
+        "linksTitle": "Externe Links",
+        "links": "Diese Website enthält Links zu GitHub und LinkedIn sowie zu meinen Projekten. Daten werden an diese Dienste erst übermittelt, wenn du einen Link anklickst. Ab dann gilt die Datenschutzerklärung des jeweiligen Anbieters.",
+        "rightsTitle": "Deine Rechte",
+        "rights": "Du hast das Recht auf Auskunft über deine gespeicherten Daten (Art. 15 DSGVO), auf Berichtigung (Art. 16), auf Löschung (Art. 17), auf Einschränkung der Verarbeitung (Art. 18), auf Datenübertragbarkeit (Art. 20) und auf Widerspruch gegen die Verarbeitung (Art. 21). Schreib mir dafür einfach an contact@keanucentamore.de. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.",
+        "encryptionTitle": "SSL-/TLS-Verschlüsselung",
+        "encryption": "Aus Sicherheitsgründen nutzt diese Website eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennst du am Schloss-Symbol und an „https://“ in der Adresszeile deines Browsers.",
+        "date": "Stand: 20. November 2026"
     }
 }
