@@ -105,6 +105,27 @@
     font-size: 23px;
 }
 
+/* Hover laut Prototyp: Pin mit Ring, Laptop mit drittem Funkbogen (je eigene Bilddatei), Koffer kippt */
+.icon-hover {
+    display: none;
+}
+
+.fact:hover .icon {
+    display: none;
+}
+
+.fact:hover .icon-hover {
+    display: block;
+}
+
+.fact-relocate img {
+    transition: transform 125ms ease-in-out;
+}
+
+.fact-relocate:hover img {
+    transform: rotate(6deg);
+}
+
 /* Bubbles: Position und Größe aus der Vorlage (1440 px) */
 .bubble-big {
     top: -103px;

@@ -99,6 +99,12 @@
     display: block;
     width: 30px;
     height: 30px;
+    transition: transform 125ms ease-in-out;
+}
+
+/* Hover laut Prototyp: das Icon rückt etwas nach links */
+.social a:hover img {
+    transform: translateX(-6px);
 }
 
 .scroll-mobile {

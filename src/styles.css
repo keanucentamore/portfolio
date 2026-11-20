@@ -31,6 +31,17 @@ body {
     font-weight: 400;
     color: var(--primary);
     text-decoration: none;
+    cursor: pointer;
+    transition: transform 125ms ease-in-out;
+}
+
+/* Hover laut Prototyp: Farbverlauf, weiße Schrift, etwas größer */
+.button:hover {
+    border-color: transparent;
+    background: linear-gradient(90deg, var(--primary) 30%, var(--dark-blue) 100%) border-box;
+    box-shadow: 0 6px 14px rgba(0, 67, 240, 0.3);
+    color: var(--white);
+    transform: scale(1.08);
 }
 
 .button-filled {

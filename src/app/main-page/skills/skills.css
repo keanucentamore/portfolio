@@ -34,6 +34,16 @@
 
 .skill img {
     height: 75px;
+    transition: transform 125ms ease-in-out;
+}
+
+/* Hover laut Prototyp: Icon hebt sich, Name wird fett */
+.skill:hover img {
+    transform: translateY(-10px);
+}
+
+.skill:hover p {
+    font-weight: 700;
 }
 
 .skill p {

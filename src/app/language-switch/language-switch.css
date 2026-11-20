@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    font-weight: 700;
+}
+
 /* Aktive Sprache: fett, dunkleres Blau und unterstrichen */
 button.active {
     font-weight: 700;

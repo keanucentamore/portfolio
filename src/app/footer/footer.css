@@ -45,6 +45,12 @@ footer {
     display: block;
     width: 30px;
     height: 30px;
+    transition: transform 125ms ease-in-out;
+}
+
+/* Hover laut Prototyp: Icon wird größer */
+.footer-social a:hover img {
+    transform: scale(1.3);
 }
 
 .legal-links {
@@ -61,6 +67,11 @@ footer {
     line-height: 20px;
     color: var(--white);
     text-decoration: none;
+}
+
+.legal-links a:hover {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 /* Mobil: alles mittig untereinander */

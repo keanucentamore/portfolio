@@ -30,6 +30,11 @@ nav a {
     text-decoration: none;
 }
 
+/* Im Prototyp nicht gezeigt: fett wie der Sprachumschalter, die feste Breite verhindert ein Springen */
+nav a:hover {
+    font-weight: 700;
+}
+
 .burger {
     display: none;
     padding: 0;
