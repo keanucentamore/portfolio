@@ -6,11 +6,40 @@
         <p class="description">{{ project().descriptionKey | translate }}</p>
         <div class="project-links">
             @if (project().liveUrl) {
-                <a class="button button-filled" [href]="project().liveUrl" target="_blank">
+                <button class="button button-filled" type="button" (click)="openDemo()">
                     {{ 'projects.liveTest' | translate }}
-                </a>
+                </button>
             }
             <a class="button" [href]="project().githubUrl" target="_blank">Github</a>
         </div>
     </div>
+
+    <!-- Demo-Fenster über der Seite; der iframe entsteht erst beim Öffnen und verschwindet beim Schließen -->
+    <dialog
+        #demoDialog
+        class="demo"
+        [attr.aria-label]="project().name"
+        (close)="onDialogClose()"
+        (click)="onDialogClick($event)"
+    >
+        <div class="demo-window">
+            <div class="demo-bar">
+                <h4>{{ project().name }}</h4>
+                <a class="demo-new-tab" [href]="project().liveUrl" target="_blank">
+                    {{ 'projects.openInTab' | translate }}
+                </a>
+                <button
+                    class="demo-close"
+                    type="button"
+                    (click)="closeDemo()"
+                    [attr.aria-label]="'projects.closeDemo' | translate"
+                >
+                    ✕
+                </button>
+            </div>
+            @if (demoOpen()) {
+                <iframe [src]="demoUrl()" [title]="project().name" allow="fullscreen; autoplay"></iframe>
+            }
+        </div>
+    </dialog>
 </article>

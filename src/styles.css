@@ -17,6 +17,12 @@ body {
     background-color: var(--white);
 }
 
+/* Solange ein Dialog (z. B. die Projekt-Demo) offen ist, scrollt die Seite dahinter nicht mit.
+   :has() ist nicht aus dem Kurs: prüft, ob im body gerade ein offener Dialog steckt */
+body:has(dialog[open]) {
+    overflow: hidden;
+}
+
 /* Gemeinsamer Button-Stil (About, Projekte, Kontakt), Größe legt jede Component selbst fest */
 .button {
     display: inline-flex;

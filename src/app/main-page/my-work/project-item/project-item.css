@@ -79,6 +79,87 @@
 
 /* Mobil: Bild oben, Text darunter, alles mittig */
 /* Tablet bis 1439 px: Bild, Abstände und Überschriften wachsen mit der Fensterbreite (1vw = 14,4px); Beschreibung und Buttons bleiben fest, sonst fiele die Schrift unter 16px */
+/* Demo-Fenster: <dialog> liegt mit showModal() über der ganzen Seite.
+   min() ist nicht aus dem Kurs: nimmt den kleineren Wert, so passt das Fenster auch in kleine Browserfenster. */
+.demo {
+    width: min(1200px, 92vw);
+    height: min(800px, 88vh);
+    max-width: none;
+    max-height: none;
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* ::backdrop ist die abgedunkelte Fläche hinter einem offenen Dialog */
+.demo::backdrop {
+    background-color: rgba(0, 20, 60, 0.6);
+}
+
+.demo-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.demo-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 16px 12px 24px;
+    background: linear-gradient(90deg, var(--primary) 30%, var(--dark-blue) 100%);
+    color: var(--white);
+}
+
+.demo-bar h4 {
+    margin-right: auto;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.demo-new-tab {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.demo-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    background: none;
+    font-size: 18px;
+    color: var(--white);
+    cursor: pointer;
+    transition: transform 125ms ease-in-out;
+}
+
+.demo-close:hover,
+.demo-close:focus-visible {
+    transform: scale(1.1);
+}
+
+/* Auf dem blauen Balken ist der Fokus-Rahmen weiß statt dunkelblau */
+.demo-bar :focus-visible {
+    outline-color: var(--white);
+}
+
+.demo iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
     .project {
         gap: 6.18vw;
@@ -185,5 +266,19 @@
 
     .project-links .button-filled {
         width: 124px;
+    }
+}
+
+/* Mobil: Demo füllt den ganzen Bildschirm */
+@media (max-width: 1023px) {
+    .demo {
+        width: 100vw;
+        height: 100dvh;
+        border-radius: 0;
+    }
+
+    .demo-bar {
+        gap: 16px;
+        padding: 8px 12px 8px 16px;
     }
 }

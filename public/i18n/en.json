@@ -38,7 +38,9 @@
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "polloLoco": "A jump-and-run game built with object-oriented JavaScript and HTML5 Canvas. Help Pepe cross the desert, collect coins and salsa bottles and defeat the giant boss hen.",
         "pokedex": "A Pokédex based on the PokéAPI, designed like the device from the series. Load, search and browse Pokémon and open details with stats and evolution chains.",
-        "liveTest": "Live test"
+        "liveTest": "Live test",
+        "openInTab": "Open in new tab ↗",
+        "closeDemo": "Close demo"
     },
     "myWork": {
         "title": "My work",
