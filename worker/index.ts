@@ -3,7 +3,8 @@
  * Serves the built Angular app and handles the contact form at POST /api/contact.
  */
 
-const SENDER = { email: 'contact@keanucentamore.de', name: 'Portfolio Keanu Centamore' };
+const SENDER = 'Portfolio Keanu Centamore <hello@keanucentamore.de>';
+const RESEND_URL = 'https://api.resend.com/emails';
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 interface ContactMessage {
@@ -41,20 +42,45 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
     if (!contact) {
         return jsonResponse({ error: 'Invalid form data' }, 400);
     }
-    try {
-        await env.EMAIL.send({
-            from: SENDER,
-            to: env.CONTACT_TO,
-            replyTo: contact.email,
-            subject: `Portfolio: message from ${contact.name}`,
-            text: `Name: ${contact.name}\nEmail: ${contact.email}\n\n${contact.message}`,
-            html: buildHtml(contact),
-        });
-    } catch (error) {
-        console.error('Sending the contact email failed', error);
+    const sent = await sendEmail(contact, env);
+    if (!sent) {
         return jsonResponse({ error: 'Email could not be sent' }, 502);
     }
     return jsonResponse({ ok: true }, 200);
+}
+
+/**
+ * Sends the message through the Resend API to the own inbox.
+ * The visitor's address is set as reply-to, so an answer goes straight back to them.
+ * Returns true if Resend accepted the email.
+ * @param contact - The validated form data.
+ * @param env - Contains the Resend API key and the recipient address.
+ */
+async function sendEmail(contact: ContactMessage, env: Env): Promise<boolean> {
+    try {
+        const response = await fetch(RESEND_URL, {
+            method: 'POST',
+            headers: {
+                Authorization: `Bearer ${env.RESEND_API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                from: SENDER,
+                to: [env.CONTACT_TO],
+                reply_to: contact.email,
+                subject: `Portfolio: message from ${contact.name}`,
+                text: `Name: ${contact.name}\nEmail: ${contact.email}\n\n${contact.message}`,
+                html: buildHtml(contact),
+            }),
+        });
+        if (!response.ok) {
+            console.error('Resend rejected the email', response.status, await response.text());
+        }
+        return response.ok;
+    } catch (error) {
+        console.error('Resend could not be reached', error);
+        return false;
+    }
 }
 
 /**

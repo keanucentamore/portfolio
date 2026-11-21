@@ -4,6 +4,11 @@
     "name": "portfolio",
     "main": "worker/index.ts",
     "compatibility_date": "2026-11-01",
+    // Eigene Domain: Cloudflare legt DNS-Eintrag und SSL-Zertifikat für beide Adressen selbst an
+    "routes": [
+        { "pattern": "keanucentamore.de", "custom_domain": true },
+        { "pattern": "www.keanucentamore.de", "custom_domain": true }
+    ],
     "assets": {
         "directory": "./dist/portfolio/browser",
         "binding": "ASSETS",
@@ -12,13 +17,10 @@
         // Nur /api/* geht zuerst an den Worker, alles andere kommt direkt aus den Dateien
         "run_worker_first": ["/api/*"]
     },
-    // Mailversand über Cloudflare Email Routing; Absender ist fest die eigene Adresse
-    "send_email": [
-        {
-            "name": "EMAIL",
-            "allowed_sender_addresses": ["contact@keanucentamore.de"]
-        }
-    ]
-    // Die Empfängeradresse steht nicht hier im öffentlichen Repo, sondern als Secret CONTACT_TO:
-    // npx wrangler secret put CONTACT_TO
+    // Empfänger der Kontaktformular-Nachrichten (die Adresse steht ohnehin öffentlich auf der Seite)
+    "vars": {
+        "CONTACT_TO": "hello@keanucentamore.de"
+    }
+    // Der Versand läuft über Resend. Der API-Schlüssel steht nicht im Repo, sondern als Secret:
+    // npx wrangler secret put RESEND_API_KEY
 }
