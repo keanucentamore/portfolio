@@ -50,38 +50,8 @@ public/
   icons/, images/, fonts/
 ```
 
-## Run locally
-
-```bash
-npm install
-npm start
-```
-
-Then open `http://localhost:4200/` in the browser.
-
-To build for production:
-
-```bash
-npm run build
-```
-
-The finished files are in `dist/portfolio/browser`.
-
 ## Contact form and hosting
 
 The site runs on a Cloudflare Worker (`worker/index.ts`, configured in `wrangler.jsonc`). The Worker serves the built Angular app and handles `POST /api/contact`: it checks the form data again on the server and sends the message through the [Resend](https://resend.com) API to the inbox set in `CONTACT_TO`, with the visitor's address as reply-to.
 
-The Resend API key is not stored in the repository but as a secret:
-
-```bash
-npx wrangler secret put RESEND_API_KEY
-```
-
-To run the Worker locally, create a `.dev.vars` file with `RESEND_API_KEY=...` and run:
-
-```bash
-npm run cf:types   # generates the Worker types
-npm run cf:dev     # builds the app and starts the Worker on http://localhost:8787
-```
-
-`npm run cf:deploy` builds and publishes the site.
+The Resend API key is not stored in the repository but as a Cloudflare secret.
