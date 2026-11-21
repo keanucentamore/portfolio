@@ -19,7 +19,7 @@ export class Projects {
             technologies: 'JavaScript | HTML | CSS | Canvas',
             descriptionKey: 'projects.polloLoco',
             image: 'pollo_loco.webp',
-            liveUrl: '',
+            liveUrl: 'https://pollo-loco.keanucentamore.de',
             githubUrl: 'https://github.com/keanucentamore/EL_POLLO_LOCO_FINAL',
         },
         {
@@ -27,7 +27,7 @@ export class Projects {
             technologies: 'JavaScript | HTML | CSS | API',
             descriptionKey: 'projects.pokedex',
             image: 'pokedex.webp',
-            liveUrl: '',
+            liveUrl: 'https://pokedex.keanucentamore.de',
             githubUrl: 'https://github.com/keanucentamore/Pokedex',
         },
     ];

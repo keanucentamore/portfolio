@@ -5,9 +5,11 @@
         <p class="technologies">{{ project().technologies }}</p>
         <p class="description">{{ project().descriptionKey | translate }}</p>
         <div class="project-links">
-            <a class="button button-filled" [href]="project().liveUrl" target="_blank">
-                {{ 'projects.liveTest' | translate }}
-            </a>
+            @if (project().liveUrl) {
+                <a class="button button-filled" [href]="project().liveUrl" target="_blank">
+                    {{ 'projects.liveTest' | translate }}
+                </a>
+            }
             <a class="button" [href]="project().githubUrl" target="_blank">Github</a>
         </div>
     </div>
