@@ -154,10 +154,48 @@
     outline-color: var(--white);
 }
 
-.demo iframe {
+/* Demo und Ladeanzeige liegen in derselben Grid-Zelle übereinander (wie beim Hero-Foto) */
+.demo-body {
+    display: grid;
     flex: 1;
+}
+
+.demo-body > * {
+    grid-area: 1 / 1;
+}
+
+.demo iframe {
     width: 100%;
+    height: 100%;
     border: none;
+}
+
+.demo-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+/* Drehender Kreis: ein Rand ist farbig, die Animation dreht ihn endlos */
+.demo-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--light-blue);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: demo-spin 900ms linear infinite;
+}
+
+@keyframes demo-spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {

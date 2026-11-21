@@ -14,6 +14,7 @@ export class ProjectItem {
     project = input.required<Project>();
     reversed = input(false);
     demoOpen = signal(false);
+    demoLoading = signal(false);
     demoDialog = viewChild.required<ElementRef<HTMLDialogElement>>('demoDialog');
 
     // Angular lässt in einem iframe nur ausdrücklich freigegebene Adressen zu.
@@ -25,7 +26,15 @@ export class ProjectItem {
      */
     openDemo() {
         this.demoOpen.set(true);
+        this.demoLoading.set(true);
         this.demoDialog().nativeElement.showModal();
+    }
+
+    /**
+     * Hides the loading indicator once the demo inside the window has finished loading.
+     */
+    onDemoLoaded() {
+        this.demoLoading.set(false);
     }
 
     /**
@@ -41,6 +50,7 @@ export class ProjectItem {
      */
     onDialogClose() {
         this.demoOpen.set(false);
+        this.demoLoading.set(false);
     }
 
     /**

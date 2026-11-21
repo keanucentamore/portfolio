@@ -40,7 +40,8 @@
         "pokedex": "Ein Pokédex auf Basis der PokéAPI im Look des Geräts aus der Serie. Pokémon laden, suchen und durchblättern und Details mit Werten und Entwicklungen öffnen.",
         "liveTest": "Live-Test",
         "openInTab": "In neuem Tab öffnen ↗",
-        "closeDemo": "Demo schließen"
+        "closeDemo": "Demo schließen",
+        "demoLoading": "Demo wird geladen …"
     },
     "myWork": {
         "title": "Meine Projekte",

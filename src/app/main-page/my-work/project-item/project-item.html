@@ -37,9 +37,23 @@
                     ✕
                 </button>
             </div>
-            @if (demoOpen()) {
-                <iframe [src]="demoUrl()" [title]="project().name" allow="fullscreen; autoplay"></iframe>
-            }
+            <!-- Ladeanzeige und Demo liegen übereinander; die Anzeige verschwindet, sobald die Demo geladen ist -->
+            <div class="demo-body">
+                @if (demoOpen()) {
+                    <iframe
+                        [src]="demoUrl()"
+                        [title]="project().name"
+                        allow="fullscreen; autoplay"
+                        (load)="onDemoLoaded()"
+                    ></iframe>
+                }
+                @if (demoLoading()) {
+                    <div class="demo-loading">
+                        <span class="demo-spinner" aria-hidden="true"></span>
+                        <p>{{ 'projects.demoLoading' | translate }}</p>
+                    </div>
+                }
+            </div>
         </div>
     </dialog>
 </article>
