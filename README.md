@@ -67,6 +67,21 @@ npm run build
 
 The finished files are in `dist/portfolio/browser`.
 
-## Contact form
+## Contact form and hosting
 
-The form sends its data as JSON to `/api/contact`. That endpoint runs on the server at the hosting provider and forwards the message by email; it is not part of the local development server, so sending only works on the live site.
+The site runs on a Cloudflare Worker (`worker/index.ts`, configured in `wrangler.jsonc`). The Worker serves the built Angular app and handles `POST /api/contact`: it checks the form data again on the server and forwards the message by email through Cloudflare Email Routing, with the visitor's address as reply-to.
+
+The recipient address is not stored in the repository but as a secret:
+
+```bash
+npx wrangler secret put CONTACT_TO
+```
+
+To test the Worker locally, create a `.dev.vars` file with `CONTACT_TO=you@example.com` and run:
+
+```bash
+npm run cf:types   # generates the Worker types
+npm run cf:dev     # builds the app and starts the Worker on http://localhost:8787
+```
+
+Locally the email is only simulated and logged in the terminal. `npm run cf:deploy` builds and publishes the site.

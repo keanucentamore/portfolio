@@ -41,3 +41,8 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Cloudflare Worker: lokale Secrets und Wrangler-Zwischenstand
+.dev.vars
+.wrangler/
+worker/worker-configuration.d.ts

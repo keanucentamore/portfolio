@@ -1,0 +1,24 @@
+{
+    // Cloudflare Worker: liefert die gebaute Angular-Seite aus und nimmt das Kontaktformular unter /api/contact an
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "portfolio",
+    "main": "worker/index.ts",
+    "compatibility_date": "2026-11-01",
+    "assets": {
+        "directory": "./dist/portfolio/browser",
+        "binding": "ASSETS",
+        // Unbekannte Pfade wie /legal-notice liefern index.html, den Rest erledigt der Angular-Router
+        "not_found_handling": "single-page-application",
+        // Nur /api/* geht zuerst an den Worker, alles andere kommt direkt aus den Dateien
+        "run_worker_first": ["/api/*"]
+    },
+    // Mailversand über Cloudflare Email Routing; Absender ist fest die eigene Adresse
+    "send_email": [
+        {
+            "name": "EMAIL",
+            "allowed_sender_addresses": ["contact@keanucentamore.de"]
+        }
+    ]
+    // Die Empfängeradresse steht nicht hier im öffentlichen Repo, sondern als Secret CONTACT_TO:
+    // npx wrangler secret put CONTACT_TO
+}
